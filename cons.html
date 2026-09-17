@@ -20,38 +20,49 @@
 
     <!-- ================= NAVBAR ================= -->
 
-    <nav>
+ 
+<nav>
 
-        <div class="logo">
-            Swismax<span> solution</span>
-        </div>
+    <div class="logo">
+        Swismax<span> solution</span>
+    </div>
 
 
-        <ul class="nav-links">
+    <!-- Toggle Button -->
 
-            <li>
-                <a href="/index.html">Home</a>
-            </li>
+    <button class="menu-toggle" id="menuToggle">
+        ☰
+    </button>
 
-            <li>
-                <a href="/Services.html">Services</a>
-            </li>
 
-            <li>
-                <a href="/About.html">About</a>
-            </li>
+    <!-- Navigation Links -->
 
-            <li>
-                <a href="/Project.html">Projects</a>
-            </li>
+    <ul class="nav-links" id="navLinks">
 
-            <li>
-                <a href="/contact.html">Contact</a>
-            </li>
+        <li>
+            <a href="index.html">Home</a>
+        </li>
 
-        </ul>
+        <li>
+            <a href="Services.html">Services</a>
+        </li>
 
-    </nav>
+        <li>
+            <a href="About.html">About</a>
+        </li>
+
+        <li>
+            <a href="Project.html">Projects</a>
+        </li>
+
+        <li>
+            <a href="contact.html">Contact</a>
+        </li>
+
+    </ul>
+
+</nav>
+
 
 
 
@@ -633,6 +644,6 @@
 
 
 </body>
-
+<script> const menuToggle = document.getElementById("menuToggle"); const navLinks = document.getElementById("navLinks"); menuToggle.addEventListener("click", function () { navLinks.classList.toggle("active"); }); </script>
 </html>
 

@@ -12,37 +12,49 @@
 
 
 <body>
-    <nav>
 
-        <div class="logo">
-            Swismax<span> solution</span>
-        </div>
+<nav>
 
-        <ul class="nav-links">
+    <div class="logo">
+        Swismax<span> solution</span>
+    </div>
 
-            <li>
-                <a href="#home">Home</a>
-            </li>
 
-            <li>
-                <a href="/Services.html">Services</a>
-            </li>
+    <!-- Toggle Button -->
 
-            <li>
-                <a href="/About.html">About</a>
-            </li>
+    <button class="menu-toggle" id="menuToggle">
+        ☰
+    </button>
 
-            <li>
-                <a href="/Project.html">Projects</a>
-            </li>
 
-            <li>
-                <a href="/contact.html">Contact</a>
-            </li>
+    <!-- Navigation Links -->
 
-        </ul>
+    <ul class="nav-links" id="navLinks">
 
-    </nav>
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+
+        <li>
+            <a href="Services.html">Services</a>
+        </li>
+
+        <li>
+            <a href="About.html">About</a>
+        </li>
+
+        <li>
+            <a href="Project.html">Projects</a>
+        </li>
+
+        <li>
+            <a href="contact.html">Contact</a>
+        </li>
+
+    </ul>
+
+</nav>
+
 
 
 
@@ -825,8 +837,11 @@
         </p>
 
     </footer>
-
-
 </body>
+
+
+
+
+<script> const menuToggle = document.getElementById("menuToggle"); const navLinks = document.getElementById("navLinks"); menuToggle.addEventListener("click", function () { navLinks.classList.toggle("active"); }); </script>
 
 </html>
