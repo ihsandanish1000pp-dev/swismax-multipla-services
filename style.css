@@ -1,6 +1,3 @@
-
-
-
 * {
     margin: 0;
     padding: 0;
@@ -764,7 +761,7 @@ footer span {
     color: #d4af37;
 }
 
-.contact-info > p {
+.contact-info>p {
     color: #aaa;
     line-height: 1.8;
     font-size: 16px;
@@ -1057,10 +1054,6 @@ footer span {
 
 }
 
-
-
-
-```css
 /* =========================
    CONTACT SECTION
 ========================= */
@@ -1148,7 +1141,7 @@ footer span {
     color: #d4af37;
 }
 
-.contact-info > p {
+.contact-info>p {
     color: #999;
     line-height: 1.8;
     margin-bottom: 35px;
@@ -1449,7 +1442,7 @@ footer span {
     }
 
 
-    .contact-info > p {
+    .contact-info>p {
         font-size: 15px;
 
         line-height: 1.7;
@@ -1527,7 +1520,7 @@ footer span {
     }
 
 
-    .contact-info > p {
+    .contact-info>p {
         font-size: 14px;
     }
 
@@ -1589,6 +1582,10170 @@ footer span {
         height: 52px;
 
         font-size: 16px;
+    }
+
+}
+
+
+
+
+/* =========================================
+   SERVICES PAGE HERO
+========================================= */
+
+.services-hero {
+
+    min-height: 420px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 100px 20px;
+
+    background:
+        linear-gradient(90deg,
+            rgba(11, 15, 20, 0.98),
+            rgba(11, 15, 20, 0.75)),
+        url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab") center/cover;
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+.services-hero-content {
+
+    max-width: 800px;
+
+}
+
+
+.services-hero small {
+
+    color: goldenrod;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+}
+
+
+.services-hero h1 {
+
+    color: white;
+
+    font-size: 65px;
+
+    margin: 15px 0;
+
+}
+
+
+.services-hero h1 span {
+
+    color: goldenrod;
+
+}
+
+
+.services-hero p {
+
+    color: #ddd;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+}
+
+
+
+
+
+
+
+/* =========================================
+   SERVICES PAGE
+========================================= */
+
+.services-page {
+
+    background: #000000;
+
+    padding-top: 100px;
+
+    padding-bottom: 100px;
+
+}
+
+
+.services-page .section-heading {
+
+    text-align: center;
+
+    max-width: 750px;
+
+    margin: 0 auto 60px;
+
+}
+
+
+.services-page .section-heading small {
+
+    color: goldenrod;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+
+}
+
+
+.services-page .section-heading h2 {
+
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0;
+
+}
+
+
+.services-page .section-heading h2 span {
+
+    color: goldenrod;
+
+}
+
+
+.services-page .section-heading p {
+
+    color: #aaa;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+}
+
+
+
+/* =========================================
+   SERVICE CARDS
+========================================= */
+
+.services-page .service-grid {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.services-page .service-card {
+
+    padding: 35px 25px;
+
+    background: #11161d;
+
+    border: 1px solid #242b34;
+
+    border-radius: 15px;
+
+    transition: 0.4s;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.services-page .service-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: -100%;
+
+    width: 100%;
+
+    height: 3px;
+
+    background: goldenrod;
+
+    transition: 0.5s;
+
+}
+
+
+.services-page .service-card:hover::before {
+
+    left: 0;
+
+}
+
+
+.services-page .service-card:hover {
+
+    transform: translateY(-10px);
+
+    border-color: goldenrod;
+
+}
+
+
+.services-page .service-icon {
+
+    font-size: 45px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.services-page .service-card h3 {
+
+    color: white;
+
+    font-size: 23px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.services-page .service-card p {
+
+    color: #aaa;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+
+    min-height: 105px;
+
+}
+
+
+.services-page .service-link {
+
+    display: inline-block;
+
+    margin-top: 15px;
+
+    color: goldenrod;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+
+}
+
+
+.services-page .service-link:hover {
+
+    color: white;
+
+    transform: translateX(5px);
+
+}
+
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.services-cta {
+
+    padding: 100px 20px;
+
+    text-align: center;
+
+    background: #11161d;
+
+}
+
+
+.services-cta small {
+
+    color: goldenrod;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+
+}
+
+
+.services-cta h2 {
+
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0;
+
+}
+
+
+.services-cta h2 span {
+
+    color: goldenrod;
+
+}
+
+
+.services-cta p {
+
+    color: #aaa;
+
+    max-width: 600px;
+
+    margin: 0 auto 30px;
+
+    line-height: 1.7;
+
+}
+
+
+
+/* =========================================
+   ACTIVE NAV LINK
+========================================= */
+
+.nav-links a.active {
+
+    color: goldenrod;
+
+}
+
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 992px) {
+
+    .services-page .service-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .services-hero {
+
+        min-height: 350px;
+
+        padding: 80px 20px;
+
+    }
+
+
+    .services-hero h1 {
+
+        font-size: 42px;
+
+    }
+
+
+    .services-hero p {
+
+        font-size: 16px;
+
+    }
+
+
+    .services-page {
+
+        padding-top: 70px;
+
+        padding-bottom: 70px;
+
+    }
+
+
+    .services-page .section-heading h2 {
+
+        font-size: 34px;
+
+    }
+
+
+    .services-page .service-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .services-cta h2 {
+
+        font-size: 34px;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   ABOUT HERO
+========================================= */
+
+.about-hero {
+
+    min-height: 420px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 100px 20px;
+
+    background:
+        linear-gradient(90deg,
+            rgba(11, 15, 20, 0.98),
+            rgba(11, 15, 20, 0.75)),
+        url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab") center/cover;
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+.about-hero-content {
+
+    max-width: 850px;
+
+}
+
+
+.about-hero small {
+
+    color: goldenrod;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+}
+
+
+.about-hero h1 {
+
+    color: white;
+
+    font-size: 60px;
+
+    margin: 15px 0;
+
+}
+
+
+.about-hero h1 span {
+
+    color: goldenrod;
+
+}
+
+
+.about-hero p {
+
+    color: #ddd;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+}
+
+
+
+/* =========================================
+   ABOUT MAIN
+========================================= */
+
+.about-main {
+
+    background: #0b0f14;
+
+    padding: 100px 20px;
+
+}
+
+
+.about-main-container {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+}
+
+
+
+/* IMAGE */
+
+.about-main-image {
+
+    min-height: 500px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.25)),
+        url("about.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    border-radius: 15px;
+
+}
+
+
+.about-image-box {
+
+    padding: 20px 30px;
+
+    background: rgba(0, 0, 0, 0.65);
+
+    color: goldenrod;
+
+    font-size: 35px;
+
+    font-weight: 700;
+
+    letter-spacing: 5px;
+
+    border: 1px solid goldenrod;
+
+}
+
+
+
+/* CONTENT */
+
+.about-main-content small {
+
+    color: goldenrod;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+}
+
+
+.about-main-content h2 {
+
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0 25px;
+
+}
+
+
+.about-main-content h2 span {
+
+    color: goldenrod;
+
+    display: block;
+
+}
+
+
+.about-main-content p {
+
+    color: #aaa;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+
+}
+
+
+
+/* =========================================
+   MISSION
+========================================= */
+
+.mission-section {
+
+    background: #11161d;
+
+    padding: 100px 20px;
+
+}
+
+
+.mission-section .section-heading {
+
+    max-width: 750px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
+
+}
+
+
+.mission-section .section-heading small {
+
+    color: goldenrod;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+
+}
+
+
+.mission-section .section-heading h2 {
+
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0;
+
+}
+
+
+.mission-section .section-heading h2 span {
+
+    color: goldenrod;
+
+}
+
+
+.mission-section .section-heading p {
+
+    color: #aaa;
+
+    line-height: 1.7;
+
+}
+
+
+.mission-grid {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+
+}
+
+
+.mission-card {
+
+    padding: 45px 35px;
+
+    background: #0b0f14;
+
+    border: 1px solid #242b34;
+
+    border-radius: 15px;
+
+    transition: 0.4s;
+
+}
+
+
+.mission-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: goldenrod;
+
+}
+
+
+.mission-icon {
+
+    font-size: 45px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.mission-card h3 {
+
+    color: white;
+
+    font-size: 25px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.mission-card p {
+
+    color: #aaa;
+
+    line-height: 1.8;
+
+}
+
+
+
+/* =========================================
+   WHY CHOOSE US
+========================================= */
+
+.why-section {
+
+    background: #0b0f14;
+
+    padding: 100px 20px;
+
+}
+
+
+.why-section .section-heading {
+
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: 0 auto 60px;
+
+}
+
+
+.why-section .section-heading small {
+
+    color: goldenrod;
+
+    letter-spacing: 3px;
+
+}
+
+
+.why-section .section-heading h2 {
+
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0;
+
+}
+
+
+.why-section .section-heading h2 span {
+
+    color: goldenrod;
+
+}
+
+
+.why-section .section-heading p {
+
+    color: #aaa;
+
+    line-height: 1.7;
+
+}
+
+
+.why-grid {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.why-card {
+
+    padding: 35px 25px;
+
+    background: #11161d;
+
+    border: 1px solid #242b34;
+
+    border-radius: 15px;
+
+    transition: 0.4s;
+
+}
+
+
+.why-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: goldenrod;
+
+}
+
+
+.why-number {
+
+    color: goldenrod;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    margin-bottom: 25px;
+
+}
+
+
+.why-card h3 {
+
+    color: white;
+
+    font-size: 21px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.why-card p {
+
+    color: #aaa;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+
+}
+
+
+
+/* =========================================
+   ABOUT STATS
+========================================= */
+
+.about-stats {
+
+    padding: 70px 20px;
+
+    background: #11161d;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+    text-align: center;
+
+}
+
+
+.about-stat h2 {
+
+    color: goldenrod;
+
+    font-size: 45px;
+
+    margin-bottom: 5px;
+
+}
+
+
+.about-stat p {
+
+    color: #aaa;
+
+    margin: 0;
+
+}
+
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.about-cta {
+
+    padding: 100px 20px;
+
+    text-align: center;
+
+    background: #0b0f14;
+
+}
+
+
+.about-cta small {
+
+    color: goldenrod;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+
+}
+
+
+.about-cta h2 {
+
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0;
+
+}
+
+
+.about-cta h2 span {
+
+    color: goldenrod;
+
+}
+
+
+.about-cta p {
+
+    color: #aaa;
+
+    max-width: 650px;
+
+    margin: 0 auto 30px;
+
+    line-height: 1.7;
+
+}
+
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 992px) {
+
+    .about-main-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .why-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    .about-stats {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .about-hero {
+
+        min-height: 350px;
+
+        padding: 80px 20px;
+
+    }
+
+
+    .about-hero h1 {
+
+        font-size: 40px;
+
+    }
+
+
+    .about-main {
+
+        padding: 70px 20px;
+
+    }
+
+
+    .about-main-image {
+
+        min-height: 350px;
+
+    }
+
+
+    .about-main-content h2 {
+
+        font-size: 35px;
+
+    }
+
+
+    .mission-section,
+    .why-section {
+
+        padding: 70px 20px;
+
+    }
+
+
+    .mission-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .why-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .about-stats {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
+    .about-stat h2 {
+
+        font-size: 35px;
+
+    }
+
+
+    .about-cta h2 {
+
+        font-size: 35px;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   PROJECT HERO
+========================================= */
+
+.project-hero {
+
+    min-height: 420px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 100px 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(11, 15, 20, 0.98),
+            rgba(11, 15, 20, 0.75)
+        ),
+        url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab")
+        center/cover;
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+.project-hero-content {
+
+    max-width: 850px;
+
+}
+
+
+/* SMALL HEADING */
+
+.project-hero small {
+
+    color: goldenrod;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+}
+
+
+/* MAIN HEADING */
+
+.project-hero h1 {
+
+    color: white;
+
+    font-size: 60px;
+
+    margin: 15px 0;
+
+}
+
+
+/* GOLD TEXT */
+
+.project-hero h1 span {
+
+    color: goldenrod;
+
+}
+
+
+/* HERO PARAGRAPH */
+
+.project-hero p {
+
+    color: #ddd;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+}
+
+
+
+/* =========================================
+   PROJECT MAIN
+========================================= */
+
+.projects-page {
+
+    background: #0b0f14;
+
+    padding: 100px 20px;
+
+}
+
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.projects-page .section-heading {
+
+    max-width: 750px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
+
+}
+
+
+/* SMALL TEXT */
+
+.projects-page .section-heading small {
+
+    color: goldenrod;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+
+}
+
+
+/* HEADING */
+
+.projects-page .section-heading h2 {
+
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0;
+
+}
+
+
+/* GOLD SPAN */
+
+.projects-page .section-heading h2 span {
+
+    color: goldenrod;
+
+}
+
+
+/* PARAGRAPH */
+
+.projects-page .section-heading p {
+
+    color: #aaa;
+
+    line-height: 1.7;
+
+}
+
+
+
+/* =========================================
+   PROJECT GRID
+========================================= */
+
+.project-grid {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+}
+
+
+
+/* =========================================
+   PROJECT CARD
+========================================= */
+
+.project-card {
+
+    min-height: 350px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    border: 1px solid #242b34;
+
+    background-size: cover;
+
+    background-position: center;
+
+    transition: 0.4s;
+
+}
+
+
+/* =========================================
+   PROJECT IMAGES
+========================================= */
+
+.project-one {
+
+    background-image: url("picture/construction.jpg");
+
+}
+
+.project-two {
+
+    background-image: url("picture/travel.jpg");
+
+}
+
+.project-three {
+
+    background-image: url("picture/shopping.jpg");
+
+}
+
+.project-four {
+
+    background-image: url("picture/logistics.jpg");
+
+}
+
+.project-five {
+
+    background-image: url("picture/technology.jpg");
+
+}
+
+.project-six {
+
+    background-image: url("picture/real-estate.jpg");
+
+}
+
+.project-seven {
+
+    background-image: url("picture/trading.jpg");
+
+}
+
+.project-eight {
+
+    background-image: url("picture/consultancy.jpg");
+
+}
+
+
+
+/* =========================================
+   PROJECT OVERLAY
+========================================= */
+
+.project-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    padding: 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(11, 15, 20, 0.98),
+            rgba(11, 15, 20, 0.25)
+        );
+
+    transition: 0.4s;
+
+}
+
+
+/* HOVER */
+
+.project-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: goldenrod;
+
+}
+
+
+.project-card:hover .project-overlay {
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(11, 15, 20, 0.98),
+            rgba(11, 15, 20, 0.45)
+        );
+
+}
+
+
+
+/* =========================================
+   PROJECT NUMBER
+========================================= */
+
+.project-number {
+
+    color: goldenrod;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    margin-bottom: 12px;
+
+}
+
+
+/* =========================================
+   PROJECT CARD HEADING
+========================================= */
+
+.project-overlay h3 {
+
+    color: white;
+
+    font-size: 25px;
+
+    margin-bottom: 12px;
+
+}
+
+
+/* =========================================
+   PROJECT CARD PARAGRAPH
+========================================= */
+
+.project-overlay p {
+
+    color: #aaa;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* =========================================
+   PROJECT LINK
+========================================= */
+
+.project-overlay a {
+
+    color: goldenrod;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+
+}
+
+
+.project-overlay a:hover {
+
+    color: white;
+
+}
+
+
+
+/* =========================================
+   PROJECT CTA
+========================================= */
+
+.project-cta {
+
+    padding: 100px 20px;
+
+    text-align: center;
+
+    background: #0b0f14;
+
+}
+
+
+.project-cta small {
+
+    color: goldenrod;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+
+}
+
+
+.project-cta h2 {
+
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0;
+
+}
+
+
+.project-cta h2 span {
+
+    color: goldenrod;
+
+}
+
+
+.project-cta p {
+
+    color: #aaa;
+
+    max-width: 650px;
+
+    margin: 0 auto 30px;
+
+    line-height: 1.7;
+
+}
+
+
+
+/* =========================================
+   CTA BUTTON
+========================================= */
+
+.project-cta .hero-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+    text-decoration: none;
+
+    border: 1px solid goldenrod;
+
+    padding: 13px 30px;
+
+    border-radius: 30px;
+
+    transition: 0.3s;
+
+}
+
+
+.project-cta .hero-btn:hover {
+
+    background: goldenrod;
+
+    color: #0b0f14;
+
+}
+
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 992px) {
+
+    .project-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .project-hero {
+
+        min-height: 350px;
+
+        padding: 80px 20px;
+
+    }
+
+
+    .project-hero h1 {
+
+        font-size: 40px;
+
+    }
+
+
+    .projects-page {
+
+        padding: 70px 20px;
+
+    }
+
+
+    .projects-page .section-heading h2 {
+
+        font-size: 35px;
+
+    }
+
+
+    .project-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .project-card {
+
+        min-height: 350px;
+
+    }
+
+
+    .project-cta {
+
+        padding: 70px 20px;
+
+    }
+
+
+    .project-cta h2 {
+
+        font-size: 35px;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   CONTACT HERO
+========================================= */
+
+.contact-hero {
+
+    min-height: 420px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 100px 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(11, 15, 20, 0.98),
+            rgba(11, 15, 20, 0.75)
+        ),
+        url("https://images.unsplash.com/photo-1497366754035-f200968a6e72")
+        center/cover;
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+.contact-hero-content {
+
+    max-width: 850px;
+
+}
+
+
+.contact-hero small {
+
+    color: goldenrod;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+}
+
+
+.contact-hero h1 {
+
+    color: white;
+
+    font-size: 60px;
+
+    margin: 15px 0;
+
+}
+
+
+.contact-hero h1 span {
+
+    color: goldenrod;
+
+}
+
+
+.contact-hero p {
+
+    color: #ddd;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+}
+
+
+
+/* =========================================
+   CONTACT MAIN
+========================================= */
+
+.contact-main {
+
+    background: #0b0f14;
+
+    padding: 100px 20px;
+
+}
+
+
+.contact-container {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: start;
+
+}
+
+
+
+/* =========================================
+   CONTACT INFORMATION
+========================================= */
+
+.contact-info small {
+
+    color: goldenrod;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+}
+
+
+.contact-info h2 {
+
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0 25px;
+
+}
+
+
+.contact-info h2 span {
+
+    color: goldenrod;
+
+    display: block;
+
+}
+
+
+.contact-info > p {
+
+    color: #aaa;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 35px;
+
+    max-width: 500px;
+
+}
+
+
+
+/* =========================================
+   CONTACT ITEM
+========================================= */
+
+.contact-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 20px;
+
+    margin-bottom: 20px;
+
+    background: #11161d;
+
+    border: 1px solid #242b34;
+
+    border-radius: 15px;
+
+    transition: 0.4s;
+
+}
+
+
+.contact-item:hover {
+
+    transform: translateX(8px);
+
+    border-color: goldenrod;
+
+}
+
+
+.contact-icon {
+
+    width: 55px;
+
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid goldenrod;
+
+    border-radius: 50%;
+
+    color: goldenrod;
+
+    font-size: 24px;
+
+}
+
+
+.contact-item h3 {
+
+    color: white;
+
+    margin: 0 0 5px;
+
+    font-size: 20px;
+
+}
+
+
+.contact-item p {
+
+    color: #aaa;
+
+    margin: 0;
+
+}
+
+
+
+/* =========================================
+   CONTACT FORM
+========================================= */
+
+.contact-form {
+
+    background: #11161d;
+
+    border: 1px solid #242b34;
+
+    border-radius: 15px;
+
+    padding: 40px;
+
+}
+
+
+.contact-form h2 {
+
+    color: white;
+
+    font-size: 32px;
+
+    margin-bottom: 30px;
+
+}
+
+
+.contact-form h2 span {
+
+    color: goldenrod;
+
+}
+
+
+.form-group {
+
+    margin-bottom: 20px;
+
+}
+
+
+.form-group label {
+
+    display: block;
+
+    color: #ddd;
+
+    margin-bottom: 8px;
+
+    font-weight: 500;
+
+}
+
+
+.form-group input,
+.form-group textarea {
+
+    width: 100%;
+
+    padding: 14px 16px;
+
+    background: #0b0f14;
+
+    color: white;
+
+    border: 1px solid #242b34;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus {
+
+    border-color: goldenrod;
+
+}
+
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+
+    color: #777;
+
+}
+
+
+.form-group textarea {
+
+    resize: vertical;
+
+}
+
+
+
+/* =========================================
+   SEND BUTTON
+========================================= */
+
+.contact-form button {
+
+    width: 100%;
+
+    padding: 15px;
+
+    border: 1px solid goldenrod;
+
+    border-radius: 30px;
+
+    background: goldenrod;
+
+    color: #0b0f14;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.contact-form button:hover {
+
+    background: transparent;
+
+    color: goldenrod;
+
+}
+
+
+
+/* =========================================
+   CONTACT CTA
+========================================= */
+
+.contact-cta {
+
+    padding: 100px 20px;
+
+    text-align: center;
+
+    background: #11161d;
+
+}
+
+
+.contact-cta small {
+
+    color: goldenrod;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+
+}
+
+
+.contact-cta h2 {
+
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0;
+
+}
+
+
+.contact-cta h2 span {
+
+    color: goldenrod;
+
+}
+
+
+.contact-cta p {
+
+    color: #aaa;
+
+    max-width: 650px;
+
+    margin: 0 auto 30px;
+
+    line-height: 1.7;
+
+}
+
+
+.contact-cta a {
+
+    display: inline-block;
+
+    padding: 13px 30px;
+
+    border: 1px solid goldenrod;
+
+    border-radius: 30px;
+
+    color: white;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+
+}
+
+
+.contact-cta a:hover {
+
+    background: goldenrod;
+
+    color: #0b0f14;
+
+}
+
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 992px) {
+
+    .contact-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .contact-hero {
+
+        min-height: 350px;
+
+        padding: 80px 20px;
+
+    }
+
+
+    .contact-hero h1 {
+
+        font-size: 40px;
+
+    }
+
+
+    .contact-main {
+
+        padding: 70px 20px;
+
+    }
+
+
+    .contact-info h2 {
+
+        font-size: 35px;
+
+    }
+
+
+    .contact-form {
+
+        padding: 25px 20px;
+
+    }
+
+
+    .contact-form h2 {
+
+        font-size: 28px;
+
+    }
+
+
+    .contact-cta {
+
+        padding: 70px 20px;
+
+    }
+
+
+    .contact-cta h2 {
+
+        font-size: 35px;
+
+    }
+
+}
+
+
+
+
+
+/* constration deatil page */
+
+
+/* =========================================
+   CONSTRUCTION HERO
+========================================= */
+
+.construction-hero {
+
+    min-height: 550px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 100px 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(11, 15, 20, 0.98),
+            rgba(11, 15, 20, 0.60)
+        ),
+        url("https://images.unsplash.com/photo-1503387762-592deb58ef4e")
+        center/cover;
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+.construction-hero-content {
+
+    max-width: 850px;
+
+    margin: auto;
+
+    text-align: center;
+
+}
+
+
+.construction-hero small {
+
+    color: goldenrod;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+}
+
+
+.construction-hero h1 {
+
+    color: white;
+
+    font-size: 60px;
+
+    margin: 15px 0;
+
+}
+
+
+.construction-hero h1 span {
+
+    color: goldenrod;
+
+    display: block;
+
+}
+
+
+.construction-hero p {
+
+    color: #ddd;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    max-width: 700px;
+
+    margin: 0 auto 30px;
+
+}
+
+
+.construction-btn {
+
+    display: inline-block;
+
+    padding: 14px 30px;
+
+    border: 1px solid goldenrod;
+
+    border-radius: 30px;
+
+    color: white;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+
+}
+
+
+.construction-btn:hover {
+
+    background: goldenrod;
+
+    color: #0b0f14;
+
+}
+
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.construction-intro {
+
+    background: #0b0f14;
+
+    padding: 100px 20px;
+
+}
+
+
+.construction-intro-container {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+}
+
+
+.construction-intro-image {
+
+    min-height: 500px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.30),
+            rgba(0, 0, 0, 0.30)
+        ),
+        url("https://images.unsplash.com/photo-1541888946425-d81bb19240f5")
+        center/cover;
+
+}
+
+
+.construction-image-box {
+
+    padding: 20px 30px;
+
+    background: rgba(0, 0, 0, 0.65);
+
+    color: goldenrod;
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    letter-spacing: 5px;
+
+    border: 1px solid goldenrod;
+
+}
+
+
+.construction-intro-content small {
+
+    color: goldenrod;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+}
+
+
+.construction-intro-content h2 {
+
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0 25px;
+
+}
+
+
+.construction-intro-content h2 span {
+
+    color: goldenrod;
+
+    display: block;
+
+}
+
+
+.construction-intro-content p {
+
+    color: #aaa;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+
+}
+
+
+.construction-link {
+
+    display: inline-block;
+
+    margin-top: 15px;
+
+    color: goldenrod;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+}
+
+
+
+/* =========================================
+   SERVICES
+========================================= */
+
+.construction-services {
+
+    background: #11161d;
+
+    padding: 100px 20px;
+
+}
+
+
+.construction-section-heading {
+
+    max-width: 750px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
+
+}
+
+
+.construction-section-heading small {
+
+    color: goldenrod;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+
+}
+
+
+.construction-section-heading h2 {
+
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0;
+
+}
+
+
+.construction-section-heading h2 span {
+
+    color: goldenrod;
+
+}
+
+
+.construction-section-heading p {
+
+    color: #aaa;
+
+    line-height: 1.7;
+
+}
+
+
+.construction-service-grid {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.construction-service-card {
+
+    padding: 35px 30px;
+
+    background: #0b0f14;
+
+    border: 1px solid #242b34;
+
+    border-radius: 15px;
+
+    transition: 0.4s;
+
+}
+
+
+.construction-service-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: goldenrod;
+
+}
+
+
+.construction-number {
+
+    color: goldenrod;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+}
+
+
+.construction-service-card h3 {
+
+    color: white;
+
+    font-size: 23px;
+
+    margin: 20px 0 15px;
+
+}
+
+
+.construction-service-card p {
+
+    color: #aaa;
+
+    line-height: 1.7;
+
+}
+
+
+
+/* =========================================
+   PROCESS
+========================================= */
+
+.construction-process {
+
+    background: #0b0f14;
+
+    padding: 100px 20px;
+
+}
+
+
+.construction-process-grid {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.process-card {
+
+    padding: 35px 25px;
+
+    background: #11161d;
+
+    border: 1px solid #242b34;
+
+    border-radius: 15px;
+
+    transition: 0.4s;
+
+}
+
+
+.process-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: goldenrod;
+
+}
+
+
+.process-card span {
+
+    color: goldenrod;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+}
+
+
+.process-card h3 {
+
+    color: white;
+
+    font-size: 22px;
+
+    margin: 20px 0 12px;
+
+}
+
+
+.process-card p {
+
+    color: #aaa;
+
+    line-height: 1.7;
+
+}
+
+
+
+/* =========================================
+   WHY US
+========================================= */
+
+.construction-why {
+
+    background: #11161d;
+
+    padding: 100px 20px;
+
+}
+
+
+.construction-why-container {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+}
+
+
+.construction-why-container small {
+
+    color: goldenrod;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+
+}
+
+
+.construction-why-container h2 {
+
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0;
+
+}
+
+
+.construction-why-container h2 span {
+
+    color: goldenrod;
+
+    display: block;
+
+}
+
+
+.construction-why-container > div > p {
+
+    color: #aaa;
+
+    line-height: 1.8;
+
+}
+
+
+.construction-features {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+}
+
+
+.construction-features > div {
+
+    padding: 25px;
+
+    background: #0b0f14;
+
+    border: 1px solid #242b34;
+
+    border-radius: 12px;
+
+}
+
+
+.construction-features strong {
+
+    color: white;
+
+    font-size: 20px;
+
+}
+
+
+.construction-features p {
+
+    color: #aaa;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+}
+
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.construction-cta {
+
+    padding: 100px 20px;
+
+    text-align: center;
+
+    background: #0b0f14;
+
+}
+
+
+.construction-cta small {
+
+    color: goldenrod;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+
+}
+
+
+.construction-cta h2 {
+
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0;
+
+}
+
+
+.construction-cta h2 span {
+
+    color: goldenrod;
+
+}
+
+
+.construction-cta p {
+
+    color: #aaa;
+
+    max-width: 650px;
+
+    margin: 0 auto 30px;
+
+    line-height: 1.7;
+
+}
+
+
+.construction-cta a {
+
+    display: inline-block;
+
+    padding: 14px 30px;
+
+    border: 1px solid goldenrod;
+
+    border-radius: 30px;
+
+    color: white;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+
+}
+
+
+.construction-cta a:hover {
+
+    background: goldenrod;
+
+    color: #0b0f14;
+
+}
+
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 992px) {
+
+    .construction-intro-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .construction-service-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    .construction-process-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    .construction-why-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .construction-hero {
+
+        min-height: 450px;
+
+        padding: 80px 20px;
+
+    }
+
+
+    .construction-hero h1 {
+
+        font-size: 40px;
+
+    }
+
+
+    .construction-intro {
+
+        padding: 70px 20px;
+
+    }
+
+
+    .construction-intro-image {
+
+        min-height: 350px;
+
+    }
+
+
+    .construction-intro-content h2 {
+
+        font-size: 35px;
+
+    }
+
+
+    .construction-services,
+    .construction-process,
+    .construction-why {
+
+        padding: 70px 20px;
+
+    }
+
+
+    .construction-section-heading h2 {
+
+        font-size: 35px;
+
+    }
+
+
+    .construction-service-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .construction-process-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .construction-features {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .construction-cta {
+
+        padding: 70px 20px;
+
+    }
+
+
+    .construction-cta h2 {
+
+        font-size: 35px;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   TRAVEL HERO
+========================================= */
+
+.travel-hero {
+
+    min-height: 550px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 100px 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(11, 15, 20, 0.98),
+            rgba(11, 15, 20, 0.55)
+        ),
+        url("https://images.unsplash.com/photo-1500534623283-312aade485b7")
+        center/cover;
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+.travel-hero-content {
+
+    max-width: 850px;
+
+    margin: auto;
+
+    text-align: center;
+
+}
+
+
+.travel-hero small {
+
+    color: goldenrod;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+}
+
+
+.travel-hero h1 {
+
+    color: white;
+
+    font-size: 60px;
+
+    margin: 15px 0;
+
+}
+
+
+.travel-hero h1 span {
+
+    color: goldenrod;
+
+    display: block;
+
+}
+
+
+.travel-hero p {
+
+    color: #ddd;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    max-width: 700px;
+
+    margin: 0 auto 30px;
+
+}
+
+
+.travel-btn {
+
+    display: inline-block;
+
+    padding: 14px 30px;
+
+    border: 1px solid goldenrod;
+
+    border-radius: 30px;
+
+    color: white;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+
+}
+
+
+.travel-btn:hover {
+
+    background: goldenrod;
+
+    color: #0b0f14;
+
+}
+
+
+
+/* =========================================
+   TRAVEL INTRO
+========================================= */
+
+.travel-intro {
+
+    background: #0b0f14;
+
+    padding: 100px 20px;
+
+}
+
+
+.travel-intro-container {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+}
+
+
+.travel-intro-image {
+
+    min-height: 500px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.30),
+            rgba(0, 0, 0, 0.30)
+        ),
+        url("https://images.unsplash.com/photo-1469474968028-56623f02e42e")
+        center/cover;
+
+}
+
+
+.travel-image-box {
+
+    padding: 20px 30px;
+
+    background: rgba(0, 0, 0, 0.65);
+
+    color: goldenrod;
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    letter-spacing: 5px;
+
+    border: 1px solid goldenrod;
+
+}
+
+
+.travel-intro-content small {
+
+    color: goldenrod;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+}
+
+
+.travel-intro-content h2 {
+
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0 25px;
+
+}
+
+
+.travel-intro-content h2 span {
+
+    color: goldenrod;
+
+    display: block;
+
+}
+
+
+.travel-intro-content p {
+
+    color: #aaa;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+
+}
+
+
+.travel-link {
+
+    display: inline-block;
+
+    margin-top: 15px;
+
+    color: goldenrod;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+}
+
+
+
+/* =========================================
+   TRAVEL SERVICES
+========================================= */
+
+.travel-services {
+
+    background: #11161d;
+
+    padding: 100px 20px;
+
+}
+
+
+.travel-section-heading {
+
+    max-width: 750px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
+
+}
+
+
+.travel-section-heading small {
+
+    color: goldenrod;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+
+}
+
+
+.travel-section-heading h2 {
+
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0;
+
+}
+
+
+.travel-section-heading h2 span {
+
+    color: goldenrod;
+
+}
+
+
+.travel-section-heading p {
+
+    color: #aaa;
+
+    line-height: 1.7;
+
+}
+
+
+.travel-service-grid {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.travel-service-card {
+
+    padding: 35px 30px;
+
+    background: #0b0f14;
+
+    border: 1px solid #242b34;
+
+    border-radius: 15px;
+
+    transition: 0.4s;
+
+}
+
+
+.travel-service-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: goldenrod;
+
+}
+
+
+.travel-number {
+
+    color: goldenrod;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+}
+
+
+.travel-service-card h3 {
+
+    color: white;
+
+    font-size: 23px;
+
+    margin: 20px 0 15px;
+
+}
+
+
+.travel-service-card p {
+
+    color: #aaa;
+
+    line-height: 1.7;
+
+}
+
+
+
+/* =========================================
+   DESTINATIONS
+========================================= */
+
+.travel-destinations {
+
+    background: #0b0f14;
+
+    padding: 100px 20px;
+
+}
+
+
+.destination-grid {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.destination-card {
+
+    min-height: 350px;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    background-size: cover;
+
+    background-position: center;
+
+    border: 1px solid #242b34;
+
+    transition: 0.4s;
+
+}
+
+
+.destination-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: goldenrod;
+
+}
+
+
+.destination-one {
+
+    background-image:
+        linear-gradient(
+            to top,
+            rgba(11, 15, 20, 0.95),
+            rgba(11, 15, 20, 0.10)
+        ),
+        url("https://images.unsplash.com/photo-1488646953014-85cb44e25828");
+
+}
+
+
+.destination-two {
+
+    background-image:
+        linear-gradient(
+            to top,
+            rgba(11, 15, 20, 0.95),
+            rgba(11, 15, 20, 0.10)
+        ),
+        url("https://images.unsplash.com/photo-1504150558240-0b4fd8946624");
+
+}
+
+
+.destination-three {
+
+    background-image:
+        linear-gradient(
+            to top,
+            rgba(11, 15, 20, 0.95),
+            rgba(11, 15, 20, 0.10)
+        ),
+        url("https://images.unsplash.com/photo-1497366811353-6870744d04b2");
+
+}
+
+
+.destination-card > div {
+
+    padding: 30px;
+
+}
+
+
+.destination-card h3 {
+
+    color: white;
+
+    font-size: 25px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.destination-card p {
+
+    color: #aaa;
+
+    line-height: 1.6;
+
+}
+
+
+
+/* =========================================
+   PROCESS
+========================================= */
+
+.travel-process {
+
+    background: #11161d;
+
+    padding: 100px 20px;
+
+}
+
+
+.travel-process-grid {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.travel-process-card {
+
+    padding: 35px 25px;
+
+    background: #0b0f14;
+
+    border: 1px solid #242b34;
+
+    border-radius: 15px;
+
+    transition: 0.4s;
+
+}
+
+
+.travel-process-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: goldenrod;
+
+}
+
+
+.travel-process-card span {
+
+    color: goldenrod;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+}
+
+
+.travel-process-card h3 {
+
+    color: white;
+
+    font-size: 21px;
+
+    margin: 20px 0 12px;
+
+}
+
+
+.travel-process-card p {
+
+    color: #aaa;
+
+    line-height: 1.7;
+
+}
+
+
+
+/* =========================================
+   WHY US
+========================================= */
+
+.travel-why {
+
+    background: #0b0f14;
+
+    padding: 100px 20px;
+
+}
+
+
+.travel-why-container {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+}
+
+
+.travel-why-container small {
+
+    color: goldenrod;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+
+}
+
+
+.travel-why-container h2 {
+
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0;
+
+}
+
+
+.travel-why-container h2 span {
+
+    color: goldenrod;
+
+    display: block;
+
+}
+
+
+.travel-why-container > div > p {
+
+    color: #aaa;
+
+    line-height: 1.8;
+
+}
+
+
+.travel-features {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+}
+
+
+.travel-features > div {
+
+    padding: 25px;
+
+    background: #11161d;
+
+    border: 1px solid #242b34;
+
+    border-radius: 12px;
+
+}
+
+
+.travel-features strong {
+
+    color: white;
+
+    font-size: 20px;
+
+}
+
+
+.travel-features p {
+
+    color: #aaa;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+}
+
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.travel-cta {
+
+    padding: 100px 20px;
+
+    text-align: center;
+
+    background: #11161d;
+
+}
+
+
+.travel-cta small {
+
+    color: goldenrod;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+
+}
+
+
+.travel-cta h2 {
+
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0;
+
+}
+
+
+.travel-cta h2 span {
+
+    color: goldenrod;
+
+}
+
+
+.travel-cta p {
+
+    color: #aaa;
+
+    max-width: 650px;
+
+    margin: 0 auto 30px;
+
+    line-height: 1.7;
+
+}
+
+
+.travel-cta a {
+
+    display: inline-block;
+
+    padding: 14px 30px;
+
+    border: 1px solid goldenrod;
+
+    border-radius: 30px;
+
+    color: white;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+
+}
+
+
+.travel-cta a:hover {
+
+    background: goldenrod;
+
+    color: #0b0f14;
+
+}
+
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 992px) {
+
+    .travel-intro-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .travel-service-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    .destination-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
+    .travel-process-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    .travel-why-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .travel-hero {
+
+        min-height: 450px;
+
+        padding: 80px 20px;
+
+    }
+
+
+    .travel-hero h1 {
+
+        font-size: 40px;
+
+    }
+
+
+    .travel-intro {
+
+        padding: 70px 20px;
+
+    }
+
+
+    .travel-intro-image {
+
+        min-height: 350px;
+
+    }
+
+
+    .travel-intro-content h2 {
+
+        font-size: 35px;
+
+    }
+
+
+    .travel-services,
+    .travel-destinations,
+    .travel-process,
+    .travel-why {
+
+        padding: 70px 20px;
+
+    }
+
+
+    .travel-section-heading h2 {
+
+        font-size: 35px;
+
+    }
+
+
+    .travel-service-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .destination-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .travel-process-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .travel-features {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .travel-cta {
+
+        padding: 70px 20px;
+
+    }
+
+
+    .travel-cta h2 {
+
+        font-size: 35px;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   SHOPPING HERO
+========================================= */
+
+.shopping-hero {
+
+    min-height: 550px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 100px 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(11, 15, 20, 0.98),
+            rgba(11, 15, 20, 0.55)
+        ),
+        url("https://images.unsplash.com/photo-1441986300917-64674bd600d8")
+        center/cover;
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+.shopping-hero-content {
+
+    max-width: 850px;
+
+    margin: auto;
+
+    text-align: center;
+
+}
+
+
+.shopping-hero small {
+
+    color: goldenrod;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+}
+
+
+.shopping-hero h1 {
+
+    color: white;
+
+    font-size: 60px;
+
+    margin: 15px 0;
+
+}
+
+
+.shopping-hero h1 span {
+
+    color: goldenrod;
+
+    display: block;
+
+}
+
+
+.shopping-hero p {
+
+    color: #ddd;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    max-width: 700px;
+
+    margin: 0 auto 30px;
+
+}
+
+
+.shopping-btn {
+
+    display: inline-block;
+
+    padding: 14px 30px;
+
+    border: 1px solid goldenrod;
+
+    border-radius: 30px;
+
+    color: white;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+
+}
+
+
+.shopping-btn:hover {
+
+    background: goldenrod;
+
+    color: #0b0f14;
+
+}
+
+
+
+/* =========================================
+   SHOPPING INTRO
+========================================= */
+
+.shopping-intro {
+
+    background: #0b0f14;
+
+    padding: 100px 20px;
+
+}
+
+
+.shopping-intro-container {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+}
+
+
+.shopping-intro-image {
+
+    min-height: 500px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.30),
+            rgba(0, 0, 0, 0.30)
+        ),
+        url("https://images.unsplash.com/photo-1556742049-0cfed4f6a45d")
+        center/cover;
+
+}
+
+
+.shopping-image-box {
+
+    padding: 20px 30px;
+
+    background: rgba(0, 0, 0, 0.65);
+
+    color: goldenrod;
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    letter-spacing: 5px;
+
+    border: 1px solid goldenrod;
+
+}
+
+
+.shopping-intro-content small {
+
+    color: goldenrod;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+}
+
+
+.shopping-intro-content h2 {
+
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0 25px;
+
+}
+
+
+.shopping-intro-content h2 span {
+
+    color: goldenrod;
+
+    display: block;
+
+}
+
+
+.shopping-intro-content p {
+
+    color: #aaa;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+
+}
+
+
+.shopping-link {
+
+    display: inline-block;
+
+    margin-top: 15px;
+
+    color: goldenrod;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+}
+
+
+
+/* =========================================
+   SHOPPING SERVICES
+========================================= */
+
+.shopping-services {
+
+    background: #11161d;
+
+    padding: 100px 20px;
+
+}
+
+
+.shopping-section-heading {
+
+    max-width: 750px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
+
+}
+
+
+.shopping-section-heading small {
+
+    color: goldenrod;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+
+}
+
+
+.shopping-section-heading h2 {
+
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0;
+
+}
+
+
+.shopping-section-heading h2 span {
+
+    color: goldenrod;
+
+}
+
+
+.shopping-section-heading p {
+
+    color: #aaa;
+
+    line-height: 1.7;
+
+}
+
+
+.shopping-service-grid {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.shopping-service-card {
+
+    padding: 35px 30px;
+
+    background: #0b0f14;
+
+    border: 1px solid #242b34;
+
+    border-radius: 15px;
+
+    transition: 0.4s;
+
+}
+
+
+.shopping-service-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: goldenrod;
+
+}
+
+
+.shopping-number {
+
+    color: goldenrod;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+}
+
+
+.shopping-service-card h3 {
+
+    color: white;
+
+    font-size: 23px;
+
+    margin: 20px 0 15px;
+
+}
+
+
+.shopping-service-card p {
+
+    color: #aaa;
+
+    line-height: 1.7;
+
+}
+
+
+
+/* =========================================
+   SHOPPING CATEGORIES
+========================================= */
+
+.shopping-categories {
+
+    background: #0b0f14;
+
+    padding: 100px 20px;
+
+}
+
+
+.shopping-category-grid {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.shopping-category-card {
+
+    min-height: 330px;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    background-size: cover;
+
+    background-position: center;
+
+    border: 1px solid #242b34;
+
+    transition: 0.4s;
+
+}
+
+
+.shopping-category-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: goldenrod;
+
+}
+
+
+.category-one {
+
+    background-image:
+        linear-gradient(
+            to top,
+            rgba(11, 15, 20, 0.95),
+            rgba(11, 15, 20, 0.10)
+        ),
+        url("https://images.unsplash.com/photo-1498049794561-7780e7231661");
+
+}
+
+
+.category-two {
+
+    background-image:
+        linear-gradient(
+            to top,
+            rgba(11, 15, 20, 0.95),
+            rgba(11, 15, 20, 0.10)
+        ),
+        url("https://images.unsplash.com/photo-1445205170230-053b83016050");
+
+}
+
+
+.category-three {
+
+    background-image:
+        linear-gradient(
+            to top,
+            rgba(11, 15, 20, 0.95),
+            rgba(11, 15, 20, 0.10)
+        ),
+        url("https://images.unsplash.com/photo-1618221195710-dd6b41faaea6");
+
+}
+
+
+.category-four {
+
+    background-image:
+        linear-gradient(
+            to top,
+            rgba(11, 15, 20, 0.95),
+            rgba(11, 15, 20, 0.10)
+        ),
+        url("https://images.unsplash.com/photo-1497366754035-f200968a6e72");
+
+}
+
+
+.shopping-category-card > div {
+
+    padding: 25px;
+
+}
+
+
+.shopping-category-card h3 {
+
+    color: white;
+
+    font-size: 23px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.shopping-category-card p {
+
+    color: #aaa;
+
+    line-height: 1.6;
+
+}
+
+
+
+/* =========================================
+   SHOPPING PROCESS
+========================================= */
+
+.shopping-process {
+
+    background: #11161d;
+
+    padding: 100px 20px;
+
+}
+
+
+.shopping-process-grid {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.shopping-process-card {
+
+    padding: 35px 25px;
+
+    background: #0b0f14;
+
+    border: 1px solid #242b34;
+
+    border-radius: 15px;
+
+    transition: 0.4s;
+
+}
+
+
+.shopping-process-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: goldenrod;
+
+}
+
+
+.shopping-process-card span {
+
+    color: goldenrod;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+}
+
+
+.shopping-process-card h3 {
+
+    color: white;
+
+    font-size: 21px;
+
+    margin: 20px 0 12px;
+
+}
+
+
+.shopping-process-card p {
+
+    color: #aaa;
+
+    line-height: 1.7;
+
+}
+
+
+
+/* =========================================
+   WHY US
+========================================= */
+
+.shopping-why {
+
+    background: #0b0f14;
+
+    padding: 100px 20px;
+
+}
+
+
+.shopping-why-container {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+}
+
+
+.shopping-why-container small {
+
+    color: goldenrod;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+
+}
+
+
+.shopping-why-container h2 {
+
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0;
+
+}
+
+
+.shopping-why-container h2 span {
+
+    color: goldenrod;
+
+    display: block;
+
+}
+
+
+.shopping-why-container > div > p {
+
+    color: #aaa;
+
+    line-height: 1.8;
+
+}
+
+
+.shopping-features {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+}
+
+
+.shopping-features > div {
+
+    padding: 25px;
+
+    background: #11161d;
+
+    border: 1px solid #242b34;
+
+    border-radius: 12px;
+
+}
+
+
+.shopping-features strong {
+
+    color: white;
+
+    font-size: 20px;
+
+}
+
+
+.shopping-features p {
+
+    color: #aaa;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+}
+
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.shopping-cta {
+
+    padding: 100px 20px;
+
+    text-align: center;
+
+    background: #11161d;
+
+}
+
+
+.shopping-cta small {
+
+    color: goldenrod;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+
+}
+
+
+.shopping-cta h2 {
+
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0;
+
+}
+
+
+.shopping-cta h2 span {
+
+    color: goldenrod;
+
+}
+
+
+.shopping-cta p {
+
+    color: #aaa;
+
+    max-width: 650px;
+
+    margin: 0 auto 30px;
+
+    line-height: 1.7;
+
+}
+
+
+.shopping-cta a {
+
+    display: inline-block;
+
+    padding: 14px 30px;
+
+    border: 1px solid goldenrod;
+
+    border-radius: 30px;
+
+    color: white;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+
+}
+
+
+.shopping-cta a:hover {
+
+    background: goldenrod;
+
+    color: #0b0f14;
+
+}
+
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 992px) {
+
+    .shopping-intro-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .shopping-service-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    .shopping-category-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    .shopping-process-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    .shopping-why-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .shopping-hero {
+
+        min-height: 450px;
+
+        padding: 80px 20px;
+
+    }
+
+
+    .shopping-hero h1 {
+
+        font-size: 40px;
+
+    }
+
+
+    .shopping-intro {
+
+        padding: 70px 20px;
+
+    }
+
+
+    .shopping-intro-image {
+
+        min-height: 350px;
+
+    }
+
+
+    .shopping-intro-content h2 {
+
+        font-size: 35px;
+
+    }
+
+
+    .shopping-services,
+    .shopping-categories,
+    .shopping-process,
+    .shopping-why {
+
+        padding: 70px 20px;
+
+    }
+
+
+    .shopping-section-heading h2 {
+
+        font-size: 35px;
+
+    }
+
+
+    .shopping-service-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .shopping-category-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .shopping-process-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .shopping-features {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .shopping-cta {
+
+        padding: 70px 20px;
+
+    }
+
+
+    .shopping-cta h2 {
+
+        font-size: 35px;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   LOGISTICS PAGE
+===================================================== */
+
+
+/* ================= HERO ================= */
+
+.logistics-hero {
+    min-height: 420px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 100px 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(11, 15, 20, 0.98),
+            rgba(11, 15, 20, 0.75)
+        ),
+        url("https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d")
+        center/cover;
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+.logistics-hero-content {
+    max-width: 850px;
+}
+
+
+.logistics-hero small {
+    color: goldenrod;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+
+.logistics-hero h1 {
+    color: white;
+
+    font-size: 60px;
+
+    margin: 15px 0;
+}
+
+
+.logistics-hero h1 span {
+    color: goldenrod;
+}
+
+
+.logistics-hero p {
+    color: #ddd;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+/* ================= MAIN ================= */
+
+.logistics-main {
+    background: #0b0f14;
+
+    padding: 100px 20px;
+}
+
+
+.logistics-main-container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+.logistics-main-image {
+    min-height: 500px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.30),
+            rgba(0,0,0,.30)
+        ),
+        url("https://images.unsplash.com/photo-1566576912321-d58ddd7a6088")
+        center/cover;
+
+    background-size: cover;
+
+    background-position: center;
+
+    border-radius: 15px;
+}
+
+
+.logistics-image-box {
+    padding: 20px 30px;
+
+    background: rgba(0,0,0,.65);
+
+    color: goldenrod;
+
+    font-size: 35px;
+
+    font-weight: 700;
+
+    letter-spacing: 5px;
+
+    border: 1px solid goldenrod;
+}
+
+
+.logistics-main-content small {
+    color: goldenrod;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+
+.logistics-main-content h2 {
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0 25px;
+}
+
+
+.logistics-main-content h2 span {
+    color: goldenrod;
+
+    display: block;
+}
+
+
+.logistics-main-content p {
+    color: #aaa;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+}
+
+
+/* ================= SERVICES ================= */
+
+.logistics-services {
+    background: #11161d;
+
+    padding: 100px 20px;
+}
+
+
+.logistics-services .section-heading,
+.logistics-process .section-heading,
+.logistics-why .section-heading {
+    max-width: 750px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
+}
+
+
+.logistics-services .section-heading small,
+.logistics-process .section-heading small,
+.logistics-why .section-heading small {
+    color: goldenrod;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+}
+
+
+.logistics-services .section-heading h2,
+.logistics-process .section-heading h2,
+.logistics-why .section-heading h2 {
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0;
+}
+
+
+.logistics-services .section-heading h2 span,
+.logistics-process .section-heading h2 span,
+.logistics-why .section-heading h2 span {
+    color: goldenrod;
+}
+
+
+.logistics-services .section-heading p,
+.logistics-process .section-heading p,
+.logistics-why .section-heading p {
+    color: #aaa;
+
+    line-height: 1.7;
+}
+
+
+/* SERVICE CARDS */
+
+.logistics-service-grid {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.logistics-service-card {
+    padding: 40px 30px;
+
+    background: #0b0f14;
+
+    border: 1px solid #242b34;
+
+    border-radius: 15px;
+
+    transition: .4s;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.logistics-service-card:hover {
+    transform: translateY(-8px);
+
+    border-color: goldenrod;
+}
+
+
+.logistics-icon {
+    font-size: 42px;
+
+    margin-bottom: 20px;
+}
+
+
+.logistics-service-card h3 {
+    color: white;
+
+    font-size: 23px;
+
+    margin-bottom: 15px;
+}
+
+
+.logistics-service-card p {
+    color: #aaa;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+
+/* ================= PROCESS ================= */
+
+.logistics-process {
+    background: #0b0f14;
+
+    padding: 100px 20px;
+}
+
+
+.logistics-process-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+.logistics-process-card {
+    padding: 35px 25px;
+
+    background: #11161d;
+
+    border: 1px solid #242b34;
+
+    border-radius: 15px;
+
+    transition: .4s;
+}
+
+
+.logistics-process-card:hover {
+    transform: translateY(-8px);
+
+    border-color: goldenrod;
+}
+
+
+.logistics-number {
+    color: goldenrod;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    margin-bottom: 25px;
+}
+
+
+.logistics-process-card h3 {
+    color: white;
+
+    font-size: 21px;
+
+    margin-bottom: 15px;
+}
+
+
+.logistics-process-card p {
+    color: #aaa;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+}
+
+
+/* ================= WHY US ================= */
+
+.logistics-why {
+    background: #11161d;
+
+    padding: 100px 20px;
+}
+
+
+.logistics-why-grid {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+.logistics-why-card {
+    padding: 35px 25px;
+
+    background: #0b0f14;
+
+    border: 1px solid #242b34;
+
+    border-radius: 15px;
+
+    transition: .4s;
+}
+
+
+.logistics-why-card:hover {
+    transform: translateY(-8px);
+
+    border-color: goldenrod;
+}
+
+
+.logistics-why-card h3 {
+    color: white;
+
+    font-size: 21px;
+
+    margin-bottom: 15px;
+}
+
+
+.logistics-why-card p {
+    color: #aaa;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+}
+
+
+/* ================= CTA ================= */
+
+.logistics-cta {
+    padding: 100px 20px;
+
+    text-align: center;
+
+    background: #0b0f14;
+}
+
+
+.logistics-cta small {
+    color: goldenrod;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+}
+
+
+.logistics-cta h2 {
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0;
+}
+
+
+.logistics-cta h2 span {
+    color: goldenrod;
+}
+
+
+.logistics-cta p {
+    color: #aaa;
+
+    max-width: 650px;
+
+    margin: 0 auto 30px;
+
+    line-height: 1.7;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+
+    .logistics-main-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .logistics-service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .logistics-process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .logistics-why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .logistics-hero {
+        min-height: 350px;
+
+        padding: 80px 20px;
+    }
+
+
+    .logistics-hero h1 {
+        font-size: 40px;
+    }
+
+
+    .logistics-main {
+        padding: 70px 20px;
+    }
+
+
+    .logistics-main-image {
+        min-height: 350px;
+    }
+
+
+    .logistics-main-content h2 {
+        font-size: 35px;
+    }
+
+
+    .logistics-services,
+    .logistics-process,
+    .logistics-why {
+        padding: 70px 20px;
+    }
+
+
+    .logistics-service-grid,
+    .logistics-process-grid,
+    .logistics-why-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .logistics-services .section-heading h2,
+    .logistics-process .section-heading h2,
+    .logistics-why .section-heading h2 {
+        font-size: 35px;
+    }
+
+
+    .logistics-cta h2 {
+        font-size: 35px;
+    }
+
+}
+
+
+
+
+
+
+
+
+/* ================= LOGISTICS FOOTER ================= */
+
+.logistics-footer {
+    background: #05080c;
+    color: white;
+}
+
+
+/* ================= TOP FOOTER ================= */
+
+.logistics-footer-top {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 45px 20px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+    border-bottom: 1px solid #242b34;
+}
+
+
+.logistics-footer-item {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+
+.logistics-footer-icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #242b34;
+
+    border-radius: 50%;
+
+    font-size: 20px;
+
+    transition: .4s;
+}
+
+
+.logistics-footer-item:hover .logistics-footer-icon {
+    border-color: goldenrod;
+
+    transform: translateY(-4px);
+}
+
+
+.logistics-footer-item span {
+    color: goldenrod;
+
+    font-size: 14px;
+
+    letter-spacing: 1px;
+
+    font-weight: 600;
+}
+
+
+.logistics-footer-item p {
+    color: #aaa;
+
+    margin: 5px 0 0;
+
+    font-size: 15px;
+}
+
+
+/* ================= BOTTOM FOOTER ================= */
+
+.logistics-footer-bottom {
+    text-align: center;
+
+    padding: 50px 20px 25px;
+}
+
+
+.logistics-footer-logo {
+    color: white;
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+
+.logistics-footer-logo span {
+    color: goldenrod;
+}
+
+
+.logistics-footer-bottom > p {
+    max-width: 600px;
+
+    margin: 0 auto 25px;
+
+    color: #aaa;
+
+    line-height: 1.7;
+}
+
+
+/* ================= FOOTER LINKS ================= */
+
+.logistics-footer-links {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    margin-bottom: 35px;
+}
+
+
+.logistics-footer-links a {
+    color: #aaa;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: .3s;
+}
+
+
+.logistics-footer-links a:hover {
+    color: goldenrod;
+}
+
+
+/* ================= COPYRIGHT ================= */
+
+.logistics-copyright {
+    padding-top: 25px;
+
+    border-top: 1px solid #242b34;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    .logistics-footer-top {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        padding: 40px 20px;
+    }
+
+
+    .logistics-footer-item {
+        justify-content: flex-start;
+
+        max-width: 300px;
+
+        margin: auto;
+
+        width: 100%;
+    }
+
+
+    .logistics-footer-bottom {
+        padding: 40px 20px 20px;
+    }
+
+
+    .logistics-footer-logo {
+        font-size: 26px;
+    }
+
+
+    .logistics-footer-links {
+        gap: 18px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .logistics-footer-links {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   IT SOLUTIONS PAGE
+===================================================== */
+
+
+/* ================= HERO ================= */
+
+.it-hero {
+    min-height: 420px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 100px 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(11, 15, 20, 0.98),
+            rgba(11, 15, 20, 0.75)
+        ),
+        url("https://images.unsplash.com/photo-1518770660439-4636190af475")
+        center/cover;
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+.it-hero-content {
+    max-width: 850px;
+}
+
+
+.it-hero small {
+    color: goldenrod;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+
+.it-hero h1 {
+    color: white;
+
+    font-size: 60px;
+
+    margin: 15px 0;
+}
+
+
+.it-hero h1 span {
+    color: goldenrod;
+}
+
+
+.it-hero p {
+    color: #ddd;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+/* ================= MAIN ================= */
+
+.it-main {
+    background: #0b0f14;
+
+    padding: 100px 20px;
+}
+
+
+.it-main-container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+.it-main-image {
+    min-height: 500px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.30),
+            rgba(0,0,0,.30)
+        ),
+        url("https://images.unsplash.com/photo-1497366811353-6870744d04b2")
+        center/cover;
+
+    background-size: cover;
+
+    background-position: center;
+
+    border-radius: 15px;
+}
+
+
+.it-image-box {
+    padding: 20px 30px;
+
+    background: rgba(0,0,0,.65);
+
+    color: goldenrod;
+
+    font-size: 35px;
+
+    font-weight: 700;
+
+    letter-spacing: 5px;
+
+    border: 1px solid goldenrod;
+}
+
+
+.it-main-content small {
+    color: goldenrod;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+
+.it-main-content h2 {
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0 25px;
+}
+
+
+.it-main-content h2 span {
+    color: goldenrod;
+
+    display: block;
+}
+
+
+.it-main-content p {
+    color: #aaa;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+}
+
+
+/* ================= SERVICES ================= */
+
+.it-services {
+    background: #11161d;
+
+    padding: 100px 20px;
+}
+
+
+.it-services .section-heading,
+.it-process .section-heading,
+.it-why .section-heading {
+
+    max-width: 750px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
+}
+
+
+.it-services .section-heading small,
+.it-process .section-heading small,
+.it-why .section-heading small {
+
+    color: goldenrod;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+}
+
+
+.it-services .section-heading h2,
+.it-process .section-heading h2,
+.it-why .section-heading h2 {
+
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0;
+}
+
+
+.it-services .section-heading h2 span,
+.it-process .section-heading h2 span,
+.it-why .section-heading h2 span {
+
+    color: goldenrod;
+}
+
+
+.it-services .section-heading p,
+.it-process .section-heading p,
+.it-why .section-heading p {
+
+    color: #aaa;
+
+    line-height: 1.7;
+}
+
+
+/* SERVICE GRID */
+
+.it-service-grid {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* SERVICE CARD */
+
+.it-service-card {
+
+    padding: 40px 30px;
+
+    background: #0b0f14;
+
+    border: 1px solid #242b34;
+
+    border-radius: 15px;
+
+    transition: .4s;
+}
+
+
+.it-service-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: goldenrod;
+}
+
+
+.it-icon {
+
+    font-size: 42px;
+
+    margin-bottom: 20px;
+}
+
+
+.it-service-card h3 {
+
+    color: white;
+
+    font-size: 23px;
+
+    margin-bottom: 15px;
+}
+
+
+.it-service-card p {
+
+    color: #aaa;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+
+/* ================= PROCESS ================= */
+
+.it-process {
+
+    background: #0b0f14;
+
+    padding: 100px 20px;
+}
+
+
+.it-process-grid {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+.it-process-card {
+
+    padding: 35px 25px;
+
+    background: #11161d;
+
+    border: 1px solid #242b34;
+
+    border-radius: 15px;
+
+    transition: .4s;
+}
+
+
+.it-process-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: goldenrod;
+}
+
+
+.it-number {
+
+    color: goldenrod;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    margin-bottom: 25px;
+}
+
+
+.it-process-card h3 {
+
+    color: white;
+
+    font-size: 21px;
+
+    margin-bottom: 15px;
+}
+
+
+.it-process-card p {
+
+    color: #aaa;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+}
+
+
+/* ================= WHY US ================= */
+
+.it-why {
+
+    background: #11161d;
+
+    padding: 100px 20px;
+}
+
+
+.it-why-grid {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+.it-why-card {
+
+    padding: 35px 25px;
+
+    background: #0b0f14;
+
+    border: 1px solid #242b34;
+
+    border-radius: 15px;
+
+    transition: .4s;
+}
+
+
+.it-why-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: goldenrod;
+}
+
+
+.it-why-card h3 {
+
+    color: white;
+
+    font-size: 21px;
+
+    margin-bottom: 15px;
+}
+
+
+.it-why-card p {
+
+    color: #aaa;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+}
+
+
+/* ================= CTA ================= */
+
+.it-cta {
+
+    padding: 100px 20px;
+
+    text-align: center;
+
+    background: #0b0f14;
+
+    border-top: 1px solid #242b34;
+}
+
+
+.it-cta small {
+
+    color: goldenrod;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+}
+
+
+.it-cta h2 {
+
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0 20px;
+}
+
+
+.it-cta h2 span {
+
+    color: goldenrod;
+}
+
+
+.it-cta p {
+
+    color: #aaa;
+
+    max-width: 650px;
+
+    margin: 0 auto 30px;
+
+    line-height: 1.8;
+}
+
+
+/* ================= BUTTON ================= */
+
+.it-cta .contact-btn {
+
+    width: 200px;
+
+    height: 53px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    border-radius: 50px;
+
+    background: goldenrod;
+
+    color: #0b0f14;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    transition: .4s;
+}
+
+
+.it-cta .contact-btn:hover {
+
+    background: #c19b27;
+
+    color: #0b0f14;
+
+    transform: translateY(-3px);
+}
+
+
+/* ================= FOOTER ================= */
+
+.it-footer {
+
+    background: #05080c;
+
+    color: white;
+}
+
+
+.it-footer-top {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 45px 20px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+    border-bottom: 1px solid #242b34;
+}
+
+
+.it-footer-item {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+
+.it-footer-icon {
+
+    width: 50px;
+
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid #242b34;
+
+    border-radius: 50%;
+
+    font-size: 20px;
+
+    transition: .4s;
+}
+
+
+.it-footer-item:hover .it-footer-icon {
+
+    border-color: goldenrod;
+
+    transform: translateY(-4px);
+}
+
+
+.it-footer-item span {
+
+    color: goldenrod;
+
+    font-size: 14px;
+
+    letter-spacing: 1px;
+
+    font-weight: 600;
+}
+
+
+.it-footer-item p {
+
+    color: #aaa;
+
+    margin: 5px 0 0;
+
+    font-size: 15px;
+}
+
+
+/* FOOTER BOTTOM */
+
+.it-footer-bottom {
+
+    text-align: center;
+
+    padding: 50px 20px 25px;
+}
+
+
+.it-footer-logo {
+
+    color: white;
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+
+.it-footer-logo span {
+
+    color: goldenrod;
+}
+
+
+.it-footer-bottom > p {
+
+    max-width: 600px;
+
+    margin: 0 auto 25px;
+
+    color: #aaa;
+
+    line-height: 1.7;
+}
+
+
+/* FOOTER LINKS */
+
+.it-footer-links {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    margin-bottom: 35px;
+}
+
+
+.it-footer-links a {
+
+    color: #aaa;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: .3s;
+}
+
+
+.it-footer-links a:hover {
+
+    color: goldenrod;
+}
+
+
+/* COPYRIGHT */
+
+.it-copyright {
+
+    padding-top: 25px;
+
+    border-top: 1px solid #242b34;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+
+    .it-main-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .it-service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .it-process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .it-why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .it-hero {
+        min-height: 350px;
+
+        padding: 80px 20px;
+    }
+
+
+    .it-hero h1 {
+        font-size: 40px;
+    }
+
+
+    .it-main {
+        padding: 70px 20px;
+    }
+
+
+    .it-main-image {
+        min-height: 350px;
+    }
+
+
+    .it-main-content h2 {
+        font-size: 35px;
+    }
+
+
+    .it-services,
+    .it-process,
+    .it-why {
+        padding: 70px 20px;
+    }
+
+
+    .it-service-grid,
+    .it-process-grid,
+    .it-why-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .it-services .section-heading h2,
+    .it-process .section-heading h2,
+    .it-why .section-heading h2 {
+        font-size: 35px;
+    }
+
+
+    .it-cta {
+        padding: 70px 20px;
+    }
+
+
+    .it-cta h2 {
+        font-size: 35px;
+    }
+
+
+    .it-footer-top {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        padding: 40px 20px;
+    }
+
+
+    .it-footer-item {
+        justify-content: flex-start;
+
+        max-width: 300px;
+
+        margin: auto;
+
+        width: 100%;
+    }
+
+
+    .it-footer-bottom {
+        padding: 40px 20px 20px;
+    }
+
+
+    .it-footer-links {
+        gap: 18px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   REAL ESTATE PAGE
+===================================================== */
+
+
+/* ================= HERO ================= */
+
+.realestate-hero {
+    min-height: 420px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 100px 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(11, 15, 20, 0.98),
+            rgba(11, 15, 20, 0.75)
+        ),
+        url("https://images.unsplash.com/photo-1560518883-ce09059eeffa")
+        center/cover;
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+.realestate-hero-content {
+    max-width: 850px;
+}
+
+
+.realestate-hero small {
+    color: goldenrod;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+
+.realestate-hero h1 {
+    color: white;
+
+    font-size: 60px;
+
+    margin: 15px 0;
+}
+
+
+.realestate-hero h1 span {
+    color: goldenrod;
+}
+
+
+.realestate-hero p {
+    color: #ddd;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+/* ================= MAIN ================= */
+
+.realestate-main {
+    background: #0b0f14;
+
+    padding: 100px 20px;
+}
+
+
+.realestate-main-container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+.realestate-main-image {
+    min-height: 500px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.30),
+            rgba(0,0,0,.30)
+        ),
+        url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c")
+        center/cover;
+
+    background-size: cover;
+
+    background-position: center;
+
+    border-radius: 15px;
+}
+
+
+.realestate-image-box {
+    padding: 20px 30px;
+
+    background: rgba(0,0,0,.65);
+
+    color: goldenrod;
+
+    font-size: 35px;
+
+    font-weight: 700;
+
+    letter-spacing: 5px;
+
+    border: 1px solid goldenrod;
+}
+
+
+.realestate-main-content small {
+    color: goldenrod;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+
+.realestate-main-content h2 {
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0 25px;
+}
+
+
+.realestate-main-content h2 span {
+    color: goldenrod;
+
+    display: block;
+}
+
+
+.realestate-main-content p {
+    color: #aaa;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+}
+
+
+/* ================= SERVICES ================= */
+
+.realestate-services {
+    background: #11161d;
+
+    padding: 100px 20px;
+}
+
+
+.realestate-services .section-heading,
+.realestate-process .section-heading,
+.realestate-types .section-heading,
+.realestate-why .section-heading {
+
+    max-width: 750px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
+}
+
+
+.realestate-services .section-heading small,
+.realestate-process .section-heading small,
+.realestate-types .section-heading small,
+.realestate-why .section-heading small {
+
+    color: goldenrod;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+}
+
+
+.realestate-services .section-heading h2,
+.realestate-process .section-heading h2,
+.realestate-types .section-heading h2,
+.realestate-why .section-heading h2 {
+
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0;
+}
+
+
+.realestate-services .section-heading h2 span,
+.realestate-process .section-heading h2 span,
+.realestate-types .section-heading h2 span,
+.realestate-why .section-heading h2 span {
+
+    color: goldenrod;
+}
+
+
+.realestate-services .section-heading p,
+.realestate-process .section-heading p,
+.realestate-types .section-heading p,
+.realestate-why .section-heading p {
+
+    color: #aaa;
+
+    line-height: 1.7;
+}
+
+
+/* ================= SERVICE GRID ================= */
+
+.realestate-service-grid {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.realestate-service-card {
+
+    padding: 40px 30px;
+
+    background: #0b0f14;
+
+    border: 1px solid #242b34;
+
+    border-radius: 15px;
+
+    transition: .4s;
+}
+
+
+.realestate-service-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: goldenrod;
+}
+
+
+.realestate-icon {
+
+    font-size: 42px;
+
+    margin-bottom: 20px;
+}
+
+
+.realestate-service-card h3 {
+
+    color: white;
+
+    font-size: 23px;
+
+    margin-bottom: 15px;
+}
+
+
+.realestate-service-card p {
+
+    color: #aaa;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+
+/* ================= PROCESS ================= */
+
+.realestate-process {
+
+    background: #0b0f14;
+
+    padding: 100px 20px;
+}
+
+
+.realestate-process-grid {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+.realestate-process-card {
+
+    padding: 35px 25px;
+
+    background: #11161d;
+
+    border: 1px solid #242b34;
+
+    border-radius: 15px;
+
+    transition: .4s;
+}
+
+
+.realestate-process-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: goldenrod;
+}
+
+
+.realestate-number {
+
+    color: goldenrod;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    margin-bottom: 25px;
+}
+
+
+.realestate-process-card h3 {
+
+    color: white;
+
+    font-size: 21px;
+
+    margin-bottom: 15px;
+}
+
+
+.realestate-process-card p {
+
+    color: #aaa;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+}
+
+
+/* ================= PROPERTY TYPES ================= */
+
+.realestate-types {
+
+    background: #11161d;
+
+    padding: 100px 20px;
+}
+
+
+.realestate-types-grid {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+.realestate-type-card {
+
+    padding: 40px 25px;
+
+    background: #0b0f14;
+
+    border: 1px solid #242b34;
+
+    border-radius: 15px;
+
+    transition: .4s;
+}
+
+
+.realestate-type-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: goldenrod;
+}
+
+
+.realestate-type-card h3 {
+
+    color: white;
+
+    font-size: 22px;
+
+    margin-bottom: 15px;
+}
+
+
+.realestate-type-card p {
+
+    color: #aaa;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+
+    margin: 0;
+}
+
+
+/* ================= WHY US ================= */
+
+.realestate-why {
+
+    background: #0b0f14;
+
+    padding: 100px 20px;
+}
+
+
+.realestate-why-grid {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+.realestate-why-card {
+
+    padding: 35px 25px;
+
+    background: #11161d;
+
+    border: 1px solid #242b34;
+
+    border-radius: 15px;
+
+    transition: .4s;
+}
+
+
+.realestate-why-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: goldenrod;
+}
+
+
+.realestate-why-card h3 {
+
+    color: white;
+
+    font-size: 21px;
+
+    margin-bottom: 15px;
+}
+
+
+.realestate-why-card p {
+
+    color: #aaa;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+}
+
+
+/* ================= CTA ================= */
+
+.realestate-cta {
+
+    padding: 100px 20px;
+
+    text-align: center;
+
+    background: #11161d;
+
+    border-top: 1px solid #242b34;
+}
+
+
+.realestate-cta small {
+
+    color: goldenrod;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+}
+
+
+.realestate-cta h2 {
+
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0 20px;
+}
+
+
+.realestate-cta h2 span {
+
+    color: goldenrod;
+}
+
+
+.realestate-cta p {
+
+    color: #aaa;
+
+    max-width: 650px;
+
+    margin: 0 auto 30px;
+
+    line-height: 1.8;
+}
+
+
+.realestate-cta .contact-btn {
+
+    width: 200px;
+
+    height: 53px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    border-radius: 50px;
+
+    background: goldenrod;
+
+    color: #0b0f14;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    transition: .4s;
+}
+
+
+.realestate-cta .contact-btn:hover {
+
+    background: #c19b27;
+
+    color: #0b0f14;
+
+    transform: translateY(-3px);
+}
+
+
+/* ================= FOOTER ================= */
+
+.realestate-footer {
+
+    background: #05080c;
+
+    color: white;
+}
+
+
+.realestate-footer-top {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 45px 20px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+    border-bottom: 1px solid #242b34;
+}
+
+
+.realestate-footer-item {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+
+.realestate-footer-icon {
+
+    width: 50px;
+
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid #242b34;
+
+    border-radius: 50%;
+
+    font-size: 20px;
+
+    transition: .4s;
+}
+
+
+.realestate-footer-item:hover .realestate-footer-icon {
+
+    border-color: goldenrod;
+
+    transform: translateY(-4px);
+}
+
+
+.realestate-footer-item span {
+
+    color: goldenrod;
+
+    font-size: 14px;
+
+    letter-spacing: 1px;
+
+    font-weight: 600;
+}
+
+
+.realestate-footer-item p {
+
+    color: #aaa;
+
+    margin: 5px 0 0;
+
+    font-size: 15px;
+}
+
+
+.realestate-footer-bottom {
+
+    text-align: center;
+
+    padding: 50px 20px 25px;
+}
+
+
+.realestate-footer-logo {
+
+    color: white;
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+
+.realestate-footer-logo span {
+
+    color: goldenrod;
+}
+
+
+.realestate-footer-bottom > p {
+
+    max-width: 600px;
+
+    margin: 0 auto 25px;
+
+    color: #aaa;
+
+    line-height: 1.7;
+}
+
+
+.realestate-footer-links {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    margin-bottom: 35px;
+}
+
+
+.realestate-footer-links a {
+
+    color: #aaa;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: .3s;
+}
+
+
+.realestate-footer-links a:hover {
+
+    color: goldenrod;
+}
+
+
+.realestate-copyright {
+
+    padding-top: 25px;
+
+    border-top: 1px solid #242b34;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+
+    .realestate-main-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .realestate-service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .realestate-process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .realestate-types-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .realestate-why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .realestate-hero {
+        min-height: 350px;
+
+        padding: 80px 20px;
+    }
+
+
+    .realestate-hero h1 {
+        font-size: 40px;
+    }
+
+
+    .realestate-main {
+        padding: 70px 20px;
+    }
+
+
+    .realestate-main-image {
+        min-height: 350px;
+    }
+
+
+    .realestate-main-content h2 {
+        font-size: 35px;
+    }
+
+
+    .realestate-services,
+    .realestate-process,
+    .realestate-types,
+    .realestate-why {
+        padding: 70px 20px;
+    }
+
+
+    .realestate-service-grid,
+    .realestate-process-grid,
+    .realestate-types-grid,
+    .realestate-why-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .realestate-services .section-heading h2,
+    .realestate-process .section-heading h2,
+    .realestate-types .section-heading h2,
+    .realestate-why .section-heading h2 {
+
+        font-size: 35px;
+    }
+
+
+    .realestate-cta {
+
+        padding: 70px 20px;
+    }
+
+
+    .realestate-cta h2 {
+
+        font-size: 35px;
+    }
+
+
+    .realestate-footer-top {
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        padding: 40px 20px;
+    }
+
+
+    .realestate-footer-item {
+
+        justify-content: flex-start;
+
+        max-width: 300px;
+
+        margin: auto;
+
+        width: 100%;
+    }
+
+
+    .realestate-footer-bottom {
+
+        padding: 40px 20px 20px;
+    }
+
+
+    .realestate-footer-links {
+
+        gap: 18px;
+    }
+
+}
+
+
+
+
+
+
+
+/* =====================================================
+   TRADING PAGE
+===================================================== */
+
+
+/* ================= HERO ================= */
+
+.trading-hero {
+    min-height: 420px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 100px 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(11, 15, 20, 0.98),
+            rgba(11, 15, 20, 0.75)
+        ),
+        url("https://images.unsplash.com/photo-1556742049-0cfed4f6a45d")
+        center/cover;
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+.trading-hero-content {
+    max-width: 850px;
+}
+
+
+.trading-hero small {
+    color: goldenrod;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+
+.trading-hero h1 {
+    color: white;
+
+    font-size: 60px;
+
+    margin: 15px 0;
+}
+
+
+.trading-hero h1 span {
+    color: goldenrod;
+}
+
+
+.trading-hero p {
+    color: #ddd;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+/* ================= MAIN ================= */
+
+.trading-main {
+    background: #0b0f14;
+
+    padding: 100px 20px;
+}
+
+
+.trading-main-container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+.trading-main-image {
+    min-height: 500px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.30),
+            rgba(0,0,0,.30)
+        ),
+        url("https://images.unsplash.com/photo-1521791055366-0d553872125f")
+        center/cover;
+
+    background-size: cover;
+
+    background-position: center;
+
+    border-radius: 15px;
+}
+
+
+.trading-image-box {
+    padding: 20px 30px;
+
+    background: rgba(0,0,0,.65);
+
+    color: goldenrod;
+
+    font-size: 35px;
+
+    font-weight: 700;
+
+    letter-spacing: 5px;
+
+    border: 1px solid goldenrod;
+}
+
+
+.trading-main-content small {
+    color: goldenrod;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+
+.trading-main-content h2 {
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0 25px;
+}
+
+
+.trading-main-content h2 span {
+    color: goldenrod;
+
+    display: block;
+}
+
+
+.trading-main-content p {
+    color: #aaa;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+}
+
+
+/* ================= SERVICES ================= */
+
+.trading-services {
+    background: #11161d;
+
+    padding: 100px 20px;
+}
+
+
+.trading-services .section-heading,
+.trading-products .section-heading,
+.trading-process .section-heading,
+.trading-why .section-heading {
+
+    max-width: 750px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
+}
+
+
+.trading-services .section-heading small,
+.trading-products .section-heading small,
+.trading-process .section-heading small,
+.trading-why .section-heading small {
+
+    color: goldenrod;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+}
+
+
+.trading-services .section-heading h2,
+.trading-products .section-heading h2,
+.trading-process .section-heading h2,
+.trading-why .section-heading h2 {
+
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0;
+}
+
+
+.trading-services .section-heading h2 span,
+.trading-products .section-heading h2 span,
+.trading-process .section-heading h2 span,
+.trading-why .section-heading h2 span {
+
+    color: goldenrod;
+}
+
+
+.trading-services .section-heading p,
+.trading-products .section-heading p,
+.trading-process .section-heading p,
+.trading-why .section-heading p {
+
+    color: #aaa;
+
+    line-height: 1.7;
+}
+
+
+/* SERVICE GRID */
+
+.trading-service-grid {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.trading-service-card {
+
+    padding: 40px 30px;
+
+    background: #0b0f14;
+
+    border: 1px solid #242b34;
+
+    border-radius: 15px;
+
+    transition: .4s;
+}
+
+
+.trading-service-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: goldenrod;
+}
+
+
+.trading-icon {
+
+    font-size: 42px;
+
+    margin-bottom: 20px;
+}
+
+
+.trading-service-card h3 {
+
+    color: white;
+
+    font-size: 23px;
+
+    margin-bottom: 15px;
+}
+
+
+.trading-service-card p {
+
+    color: #aaa;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+
+/* ================= PRODUCTS ================= */
+
+.trading-products {
+
+    background: #0b0f14;
+
+    padding: 100px 20px;
+}
+
+
+.trading-products-grid {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+.trading-product-card {
+
+    padding: 40px 25px;
+
+    background: #11161d;
+
+    border: 1px solid #242b34;
+
+    border-radius: 15px;
+
+    transition: .4s;
+}
+
+
+.trading-product-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: goldenrod;
+}
+
+
+.trading-product-icon {
+
+    font-size: 40px;
+
+    margin-bottom: 20px;
+}
+
+
+.trading-product-card h3 {
+
+    color: white;
+
+    font-size: 21px;
+
+    margin-bottom: 15px;
+}
+
+
+.trading-product-card p {
+
+    color: #aaa;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+
+    margin: 0;
+}
+
+
+/* ================= PROCESS ================= */
+
+.trading-process {
+
+    background: #11161d;
+
+    padding: 100px 20px;
+}
+
+
+.trading-process-grid {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+.trading-process-card {
+
+    padding: 35px 25px;
+
+    background: #0b0f14;
+
+    border: 1px solid #242b34;
+
+    border-radius: 15px;
+
+    transition: .4s;
+}
+
+
+.trading-process-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: goldenrod;
+}
+
+
+.trading-number {
+
+    color: goldenrod;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    margin-bottom: 25px;
+}
+
+
+.trading-process-card h3 {
+
+    color: white;
+
+    font-size: 21px;
+
+    margin-bottom: 15px;
+}
+
+
+.trading-process-card p {
+
+    color: #aaa;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+}
+
+
+/* ================= WHY US ================= */
+
+.trading-why {
+
+    background: #0b0f14;
+
+    padding: 100px 20px;
+}
+
+
+.trading-why-grid {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+.trading-why-card {
+
+    padding: 35px 25px;
+
+    background: #11161d;
+
+    border: 1px solid #242b34;
+
+    border-radius: 15px;
+
+    transition: .4s;
+}
+
+
+.trading-why-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: goldenrod;
+}
+
+
+.trading-why-card h3 {
+
+    color: white;
+
+    font-size: 21px;
+
+    margin-bottom: 15px;
+}
+
+
+.trading-why-card p {
+
+    color: #aaa;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+}
+
+
+/* ================= CTA ================= */
+
+.trading-cta {
+
+    padding: 100px 20px;
+
+    text-align: center;
+
+    background: #11161d;
+
+    border-top: 1px solid #242b34;
+}
+
+
+.trading-cta small {
+
+    color: goldenrod;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+}
+
+
+.trading-cta h2 {
+
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0 20px;
+}
+
+
+.trading-cta h2 span {
+
+    color: goldenrod;
+}
+
+
+.trading-cta p {
+
+    color: #aaa;
+
+    max-width: 650px;
+
+    margin: 0 auto 30px;
+
+    line-height: 1.8;
+}
+
+
+.trading-cta .contact-btn {
+
+    width: 200px;
+
+    height: 53px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    border-radius: 50px;
+
+    background: goldenrod;
+
+    color: #0b0f14;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    transition: .4s;
+}
+
+
+.trading-cta .contact-btn:hover {
+
+    background: #c19b27;
+
+    color: #0b0f14;
+
+    transform: translateY(-3px);
+}
+
+
+/* ================= FOOTER ================= */
+
+.trading-footer {
+
+    background: #05080c;
+
+    color: white;
+}
+
+
+.trading-footer-top {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 45px 20px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+    border-bottom: 1px solid #242b34;
+}
+
+
+.trading-footer-item {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+
+.trading-footer-icon {
+
+    width: 50px;
+
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid #242b34;
+
+    border-radius: 50%;
+
+    font-size: 20px;
+
+    transition: .4s;
+}
+
+
+.trading-footer-item:hover .trading-footer-icon {
+
+    border-color: goldenrod;
+
+    transform: translateY(-4px);
+}
+
+
+.trading-footer-item span {
+
+    color: goldenrod;
+
+    font-size: 14px;
+
+    letter-spacing: 1px;
+
+    font-weight: 600;
+}
+
+
+.trading-footer-item p {
+
+    color: #aaa;
+
+    margin: 5px 0 0;
+
+    font-size: 15px;
+}
+
+
+.trading-footer-bottom {
+
+    text-align: center;
+
+    padding: 50px 20px 25px;
+}
+
+
+.trading-footer-logo {
+
+    color: white;
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+
+.trading-footer-logo span {
+
+    color: goldenrod;
+}
+
+
+.trading-footer-bottom > p {
+
+    max-width: 600px;
+
+    margin: 0 auto 25px;
+
+    color: #aaa;
+
+    line-height: 1.7;
+}
+
+
+.trading-footer-links {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    margin-bottom: 35px;
+}
+
+
+.trading-footer-links a {
+
+    color: #aaa;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: .3s;
+}
+
+
+.trading-footer-links a:hover {
+
+    color: goldenrod;
+}
+
+
+.trading-copyright {
+
+    padding-top: 25px;
+
+    border-top: 1px solid #242b34;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+
+    .trading-main-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .trading-service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .trading-products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .trading-process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .trading-why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .trading-hero {
+
+        min-height: 350px;
+
+        padding: 80px 20px;
+    }
+
+
+    .trading-hero h1 {
+
+        font-size: 40px;
+    }
+
+
+    .trading-main {
+
+        padding: 70px 20px;
+    }
+
+
+    .trading-main-image {
+
+        min-height: 350px;
+    }
+
+
+    .trading-main-content h2 {
+
+        font-size: 35px;
+    }
+
+
+    .trading-services,
+    .trading-products,
+    .trading-process,
+    .trading-why {
+
+        padding: 70px 20px;
+    }
+
+
+    .trading-service-grid,
+    .trading-products-grid,
+    .trading-process-grid,
+    .trading-why-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .trading-services .section-heading h2,
+    .trading-products .section-heading h2,
+    .trading-process .section-heading h2,
+    .trading-why .section-heading h2 {
+
+        font-size: 35px;
+    }
+
+
+    .trading-cta {
+
+        padding: 70px 20px;
+    }
+
+
+    .trading-cta h2 {
+
+        font-size: 35px;
+    }
+
+
+    .trading-footer-top {
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        padding: 40px 20px;
+    }
+
+
+    .trading-footer-item {
+
+        justify-content: flex-start;
+
+        max-width: 300px;
+
+        margin: auto;
+
+        width: 100%;
+    }
+
+
+    .trading-footer-bottom {
+
+        padding: 40px 20px 20px;
+    }
+
+
+    .trading-footer-links {
+
+        gap: 18px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   CONSULTANCY PAGE
+========================================================= */
+
+
+/* ================= HERO ================= */
+
+.consultancy-hero {
+    min-height: 420px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 100px 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(11, 15, 20, 0.98),
+            rgba(11, 15, 20, 0.75)
+        ),
+        url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40")
+        center/cover;
+}
+
+
+.consultancy-hero-content {
+    max-width: 850px;
+}
+
+
+.consultancy-hero small {
+    color: goldenrod;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+
+.consultancy-hero h1 {
+    color: white;
+
+    font-size: 60px;
+
+    margin: 15px 0;
+}
+
+
+.consultancy-hero h1 span {
+    color: goldenrod;
+}
+
+
+.consultancy-hero p {
+    color: #ddd;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+/* ================= INTRO ================= */
+
+.consultancy-main {
+    background: #0b0f14;
+
+    padding: 100px 20px;
+}
+
+
+.consultancy-main-container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+.consultancy-main-image {
+    min-height: 500px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.3),
+            rgba(0,0,0,.3)
+        ),
+        url("https://images.unsplash.com/photo-1556761175-b413da4baf72")
+        center/cover;
+
+    border-radius: 15px;
+}
+
+
+.consultancy-image-box {
+    padding: 20px 30px;
+
+    background: rgba(0,0,0,.65);
+
+    color: goldenrod;
+
+    font-size: 35px;
+
+    font-weight: 700;
+
+    letter-spacing: 5px;
+
+    border: 1px solid goldenrod;
+}
+
+
+.consultancy-main-content small {
+    color: goldenrod;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+
+.consultancy-main-content h2 {
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0 25px;
+}
+
+
+.consultancy-main-content h2 span {
+    color: goldenrod;
+
+    display: block;
+}
+
+
+.consultancy-main-content p {
+    color: #aaa;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+}
+
+
+/* ================= SECTION HEADING ================= */
+
+.consultancy-section-heading {
+    max-width: 750px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
+}
+
+
+.consultancy-section-heading small {
+    color: goldenrod;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+}
+
+
+.consultancy-section-heading h2 {
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0;
+}
+
+
+.consultancy-section-heading h2 span {
+    color: goldenrod;
+}
+
+
+.consultancy-section-heading p {
+    color: #aaa;
+
+    line-height: 1.7;
+}
+
+
+/* ================= SERVICES ================= */
+
+.consultancy-services {
+    background: #11161d;
+
+    padding: 100px 20px;
+}
+
+
+.consultancy-service-grid {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.consultancy-service-card {
+    padding: 35px 25px;
+
+    background: #0b0f14;
+
+    border: 1px solid #242b34;
+
+    border-radius: 15px;
+
+    transition: .4s;
+}
+
+
+.consultancy-service-card:hover {
+    transform: translateY(-8px);
+
+    border-color: goldenrod;
+}
+
+
+.consultancy-icon {
+    color: goldenrod;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    margin-bottom: 25px;
+}
+
+
+.consultancy-service-card h3 {
+    color: white;
+
+    font-size: 23px;
+
+    margin-bottom: 15px;
+}
+
+
+.consultancy-service-card p {
+    color: #aaa;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+}
+
+
+/* ================= PROCESS ================= */
+
+.consultancy-process {
+    background: #0b0f14;
+
+    padding: 100px 20px;
+}
+
+
+.consultancy-process-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+.consultancy-process-card {
+    padding: 35px 25px;
+
+    background: #11161d;
+
+    border: 1px solid #242b34;
+
+    border-radius: 15px;
+
+    transition: .4s;
+}
+
+
+.consultancy-process-card:hover {
+    transform: translateY(-8px);
+
+    border-color: goldenrod;
+}
+
+
+.consultancy-process-number {
+    color: goldenrod;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    margin-bottom: 25px;
+}
+
+
+.consultancy-process-card h3 {
+    color: white;
+
+    font-size: 22px;
+
+    margin-bottom: 15px;
+}
+
+
+.consultancy-process-card p {
+    color: #aaa;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+}
+
+
+/* ================= WHY US ================= */
+
+.consultancy-why {
+    background: #11161d;
+
+    padding: 100px 20px;
+}
+
+
+.consultancy-why-grid {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+.consultancy-why-card {
+    padding: 35px 25px;
+
+    background: #0b0f14;
+
+    border: 1px solid #242b34;
+
+    border-radius: 15px;
+
+    transition: .4s;
+}
+
+
+.consultancy-why-card:hover {
+    transform: translateY(-8px);
+
+    border-color: goldenrod;
+}
+
+
+.consultancy-why-number {
+    color: goldenrod;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    margin-bottom: 25px;
+}
+
+
+.consultancy-why-card h3 {
+    color: white;
+
+    font-size: 21px;
+
+    margin-bottom: 15px;
+}
+
+
+.consultancy-why-card p {
+    color: #aaa;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+}
+
+
+/* ================= CTA ================= */
+
+.consultancy-cta {
+    padding: 100px 20px;
+
+    text-align: center;
+
+    background: #0b0f14;
+
+    border-top: 1px solid #242b34;
+}
+
+
+.consultancy-cta small {
+    color: goldenrod;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+
+.consultancy-cta h2 {
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0 20px;
+}
+
+
+.consultancy-cta h2 span {
+    color: goldenrod;
+}
+
+
+.consultancy-cta p {
+    color: #aaa;
+
+    max-width: 650px;
+
+    margin: 0 auto 30px;
+
+    line-height: 1.8;
+
+    font-size: 16px;
+}
+
+
+/* ================= CTA BUTTON ================= */
+
+.consultancy-cta .contact-btn {
+    width: 200px;
+
+    height: 53px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    border-radius: 50px;
+
+    background: goldenrod;
+
+    color: #0b0f14;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    position: relative;
+
+    overflow: hidden;
+
+    z-index: 1;
+
+    transition: color 0.4s ease;
+}
+
+
+.consultancy-cta .contact-btn::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    right: -100%;
+
+    width: 100%;
+
+    height: 100%;
+
+    background: #c19b27;
+
+    transition: right 0.4s ease;
+
+    z-index: -1;
+}
+
+
+.consultancy-cta .contact-btn:hover::before {
+    right: 0;
+}
+
+
+.consultancy-cta .contact-btn:hover {
+    color: #0b0f14;
+}
+
+
+/* ================= FOOTER ================= */
+
+.consultancy-footer {
+    background: #05080c;
+
+    color: white;
+}
+
+
+.consultancy-footer-top {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 45px 20px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+    border-bottom: 1px solid #242b34;
+}
+
+
+.consultancy-footer-item {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+
+.consultancy-footer-icon {
+    width: 50px;
+
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid #242b34;
+
+    border-radius: 50%;
+
+    font-size: 20px;
+
+    transition: .4s;
+}
+
+
+.consultancy-footer-item:hover .consultancy-footer-icon {
+    border-color: goldenrod;
+
+    transform: translateY(-4px);
+}
+
+
+.consultancy-footer-item span {
+    color: goldenrod;
+
+    font-size: 14px;
+
+    letter-spacing: 1px;
+
+    font-weight: 600;
+}
+
+
+.consultancy-footer-item p {
+    color: #aaa;
+
+    margin: 5px 0 0;
+
+    font-size: 15px;
+}
+
+
+.consultancy-footer-bottom {
+    text-align: center;
+
+    padding: 50px 20px 25px;
+}
+
+
+.consultancy-footer-logo {
+    color: white;
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+
+.consultancy-footer-logo span {
+    color: goldenrod;
+}
+
+
+.consultancy-footer-bottom > p {
+    max-width: 600px;
+
+    margin: 0 auto 25px;
+
+    color: #aaa;
+
+    line-height: 1.7;
+}
+
+
+.consultancy-footer-links {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    margin-bottom: 35px;
+}
+
+
+.consultancy-footer-links a {
+    color: #aaa;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: .3s;
+}
+
+
+.consultancy-footer-links a:hover {
+    color: goldenrod;
+}
+
+
+.consultancy-copyright {
+    padding-top: 25px;
+
+    border-top: 1px solid #242b34;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+
+    .consultancy-main-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .consultancy-service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .consultancy-process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .consultancy-why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .consultancy-hero {
+        min-height: 350px;
+
+        padding: 80px 20px;
+    }
+
+
+    .consultancy-hero h1 {
+        font-size: 40px;
+    }
+
+
+    .consultancy-main {
+        padding: 70px 20px;
+    }
+
+
+    .consultancy-main-image {
+        min-height: 350px;
+    }
+
+
+    .consultancy-main-content h2 {
+        font-size: 35px;
+    }
+
+
+    .consultancy-services,
+    .consultancy-process,
+    .consultancy-why {
+        padding: 70px 20px;
+    }
+
+
+    .consultancy-section-heading h2 {
+        font-size: 35px;
+    }
+
+
+    .consultancy-service-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .consultancy-process-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .consultancy-why-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .consultancy-cta {
+        padding: 70px 20px;
+    }
+
+
+    .consultancy-cta h2 {
+        font-size: 35px;
+    }
+
+
+    .consultancy-cta p {
+        font-size: 15px;
+    }
+
+
+    .consultancy-cta .contact-btn {
+        width: 180px;
+
+        height: 50px;
+
+        font-size: 16px;
+    }
+
+
+    .consultancy-footer-top {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        padding: 40px 20px;
+    }
+
+
+    .consultancy-footer-item {
+        justify-content: flex-start;
+
+        max-width: 300px;
+
+        margin: auto;
+
+        width: 100%;
+    }
+
+
+    .consultancy-footer-bottom {
+        padding: 40px 20px 20px;
+    }
+
+
+    .consultancy-footer-logo {
+        font-size: 26px;
+    }
+
+
+    .consultancy-footer-links {
+        gap: 18px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .consultancy-footer-links {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   CONSTRUCTION FEATURED PROJECT
+========================================================= */
+
+
+/* ================= HERO ================= */
+
+.construction-project-hero {
+    min-height: 420px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 100px 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(11,15,20,.98),
+            rgba(11,15,20,.72)
+        ),
+        url("https://images.unsplash.com/photo-1503387762-592deb58ef4e")
+        center/cover;
+}
+
+
+.construction-project-hero-content {
+    max-width: 850px;
+}
+
+
+.construction-project-hero small {
+    color: goldenrod;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+
+.construction-project-hero h1 {
+    color: white;
+
+    font-size: 60px;
+
+    margin: 15px 0;
+}
+
+
+.construction-project-hero h1 span {
+    color: goldenrod;
+}
+
+
+.construction-project-hero p {
+    color: #ddd;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+/* ================= OVERVIEW ================= */
+
+.construction-project-overview {
+    background: #0b0f14;
+
+    padding: 100px 20px;
+}
+
+
+.construction-project-container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+.construction-project-image {
+    min-height: 500px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.3),
+            rgba(0,0,0,.3)
+        ),
+        url("https://images.unsplash.com/photo-1541888946425-d81bb19240f5")
+        center/cover;
+}
+
+
+.construction-project-image-box {
+    padding: 20px 30px;
+
+    background: rgba(0,0,0,.65);
+
+    color: goldenrod;
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    border: 1px solid goldenrod;
+}
+
+
+.construction-project-content small {
+    color: goldenrod;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+
+.construction-project-content h2 {
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0 25px;
+}
+
+
+.construction-project-content h2 span {
+    color: goldenrod;
+
+    display: block;
+}
+
+
+.construction-project-content p {
+    color: #aaa;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+}
+
+
+/* ================= HEADING ================= */
+
+.construction-project-heading {
+    max-width: 750px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
+}
+
+
+.construction-project-heading small {
+    color: goldenrod;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+
+.construction-project-heading h2 {
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0;
+}
+
+
+.construction-project-heading h2 span {
+    color: goldenrod;
+}
+
+
+.construction-project-heading p {
+    color: #aaa;
+
+    line-height: 1.7;
+}
+
+
+/* ================= DETAILS ================= */
+
+.construction-project-details {
+    background: #11161d;
+
+    padding: 100px 20px;
+}
+
+
+.construction-project-details-grid {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.construction-project-detail-card {
+    padding: 35px 25px;
+
+    background: #0b0f14;
+
+    border: 1px solid #242b34;
+
+    border-radius: 15px;
+
+    transition: .4s;
+}
+
+
+.construction-project-detail-card:hover {
+    transform: translateY(-8px);
+
+    border-color: goldenrod;
+}
+
+
+.construction-project-number {
+    color: goldenrod;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    margin-bottom: 25px;
+}
+
+
+.construction-project-detail-card h3 {
+    color: white;
+
+    font-size: 23px;
+
+    margin-bottom: 15px;
+}
+
+
+.construction-project-detail-card p {
+    color: #aaa;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+}
+
+
+/* ================= PROCESS ================= */
+
+.construction-project-process {
+    background: #0b0f14;
+
+    padding: 100px 20px;
+}
+
+
+.construction-project-process-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+.construction-project-process-card {
+    padding: 35px 25px;
+
+    background: #11161d;
+
+    border: 1px solid #242b34;
+
+    border-radius: 15px;
+
+    transition: .4s;
+}
+
+
+.construction-project-process-card:hover {
+    transform: translateY(-8px);
+
+    border-color: goldenrod;
+}
+
+
+.construction-project-process-number {
+    color: goldenrod;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    margin-bottom: 25px;
+}
+
+
+.construction-project-process-card h3 {
+    color: white;
+
+    font-size: 22px;
+
+    margin-bottom: 15px;
+}
+
+
+.construction-project-process-card p {
+    color: #aaa;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+}
+
+
+/* ================= GALLERY ================= */
+
+.construction-project-gallery {
+    background: #11161d;
+
+    padding: 100px 20px;
+}
+
+
+.construction-project-gallery-grid {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.construction-gallery-image {
+    min-height: 330px;
+
+    border-radius: 15px;
+
+    border: 1px solid #242b34;
+
+    background-size: cover;
+
+    background-position: center;
+
+    transition: .4s;
+}
+
+
+.construction-gallery-image:hover {
+    transform: translateY(-8px);
+
+    border-color: goldenrod;
+}
+
+
+.construction-gallery-one {
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,.2),
+            rgba(0,0,0,.2)
+        ),
+        url("https://images.unsplash.com/photo-1504307651254-35680f356dfd");
+}
+
+
+.construction-gallery-two {
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,.2),
+            rgba(0,0,0,.2)
+        ),
+        url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122");
+}
+
+
+.construction-gallery-three {
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,.2),
+            rgba(0,0,0,.2)
+        ),
+        url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab");
+}
+
+
+/* ================= CTA ================= */
+
+.construction-project-cta {
+    padding: 100px 20px;
+
+    text-align: center;
+
+    background: #0b0f14;
+
+    border-top: 1px solid #242b34;
+}
+
+
+.construction-project-cta small {
+    color: goldenrod;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+
+.construction-project-cta h2 {
+    color: white;
+
+    font-size: 45px;
+
+    margin: 15px 0 20px;
+}
+
+
+.construction-project-cta h2 span {
+    color: goldenrod;
+}
+
+
+.construction-project-cta p {
+    color: #aaa;
+
+    max-width: 650px;
+
+    margin: 0 auto 30px;
+
+    line-height: 1.8;
+}
+
+
+/* ================= FOOTER ================= */
+
+.construction-project-footer {
+    background: #05080c;
+
+    color: white;
+}
+
+
+.construction-project-footer-top {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 45px 20px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+    border-bottom: 1px solid #242b34;
+}
+
+
+.construction-project-footer-item {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+
+.construction-project-footer-icon {
+    width: 50px;
+
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid #242b34;
+
+    border-radius: 50%;
+
+    font-size: 20px;
+
+    transition: .4s;
+}
+
+
+.construction-project-footer-item:hover
+.construction-project-footer-icon {
+    border-color: goldenrod;
+
+    transform: translateY(-4px);
+}
+
+
+.construction-project-footer-item span {
+    color: goldenrod;
+
+    font-size: 14px;
+
+    letter-spacing: 1px;
+
+    font-weight: 600;
+}
+
+
+.construction-project-footer-item p {
+    color: #aaa;
+
+    margin: 5px 0 0;
+
+    font-size: 15px;
+}
+
+
+.construction-project-footer-bottom {
+    text-align: center;
+
+    padding: 50px 20px 25px;
+}
+
+
+.construction-project-footer-logo {
+    color: white;
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+
+.construction-project-footer-logo span {
+    color: goldenrod;
+}
+
+
+.construction-project-footer-bottom > p {
+    max-width: 600px;
+
+    margin: 0 auto 25px;
+
+    color: #aaa;
+
+    line-height: 1.7;
+}
+
+
+.construction-project-footer-links {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    margin-bottom: 35px;
+}
+
+
+.construction-project-footer-links a {
+    color: #aaa;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: .3s;
+}
+
+
+.construction-project-footer-links a:hover {
+    color: goldenrod;
+}
+
+
+.construction-project-copyright {
+    padding-top: 25px;
+
+    border-top: 1px solid #242b34;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+
+    .construction-project-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .construction-project-details-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .construction-project-process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .construction-project-gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .construction-project-footer-top {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .construction-project-hero {
+        min-height: 350px;
+
+        padding: 80px 20px;
+    }
+
+
+    .construction-project-hero h1 {
+        font-size: 40px;
+    }
+
+
+    .construction-project-overview,
+    .construction-project-details,
+    .construction-project-process,
+    .construction-project-gallery {
+        padding: 70px 20px;
+    }
+
+
+    .construction-project-image {
+        min-height: 350px;
+    }
+
+
+    .construction-project-content h2,
+    .construction-project-heading h2,
+    .construction-project-cta h2 {
+        font-size: 35px;
+    }
+
+
+    .construction-project-details-grid,
+    .construction-project-process-grid,
+    .construction-project-gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .construction-project-footer-bottom {
+        padding: 40px 20px 20px;
+    }
+
+
+    .construction-project-footer-logo {
+        font-size: 26px;
+    }
+
+
+    .construction-project-footer-links {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================= STATS ================= */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 70px 20px;
+    background: #11161d;
+    text-align: center;
+}
+
+.stat h2 {
+    color: goldenrod;
+    font-size: 45px;
+    margin-bottom: 5px;
+}
+
+.stat p {
+    color: #aaa;
+    margin: 0;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 15px;
+        padding: 60px 15px;
+    }
+
+    .stat h2 {
+        font-size: 35px;
+    }
+
+    .stat p {
+        font-size: 14px;
     }
 
 }
