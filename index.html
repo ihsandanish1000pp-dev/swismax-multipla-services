@@ -13,47 +13,27 @@
 
 <body>
 
-<nav>
+    <nav>
 
-    <div class="logo">
-        Swismax<span> solution</span>
-    </div>
+        <div class="logo">
+            Swismax<span> solution</span>
+        </div>
 
+        <button class="menu-toggle" id="menuToggle">
+            ☰
+        </button>
 
-    <!-- Toggle Button -->
+        <ul class="nav-links" id="navLinks">
 
-    <button class="menu-toggle" id="menuToggle">
-        ☰
-    </button>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Project.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
 
+        </ul>
 
-    <!-- Navigation Links -->
-
-    <ul class="nav-links" id="navLinks">
-
-        <li>
-            <a href="index.html">Home</a>
-        </li>
-
-        <li>
-            <a href="Services.html">Services</a>
-        </li>
-
-        <li>
-            <a href="About.html">About</a>
-        </li>
-
-        <li>
-            <a href="Project.html">Projects</a>
-        </li>
-
-        <li>
-            <a href="contact.html">Contact</a>
-        </li>
-
-    </ul>
-
-</nav>
+    </nav>
 
 
 
@@ -138,6 +118,8 @@
         </div>
 
     </section>
+
+
 
 
 
@@ -842,6 +824,41 @@
 
 
 
-<script> const menuToggle = document.getElementById("menuToggle"); const navLinks = document.getElementById("navLinks"); menuToggle.addEventListener("click", function () { navLinks.classList.toggle("active"); }); </script>
+<script>
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+    menuToggle.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+    });
+</script>
+
+<script>
+    const stats = document.querySelectorAll(".stat h2");
+
+    stats.forEach(stat => {
+
+        const target = parseInt(stat.innerText);
+
+        let count = 0;
+
+        const counter = setInterval(() => {
+
+            count++;
+
+            stat.innerText = count + "+";
+
+            if (count >= target) {
+
+                clearInterval(counter);
+
+                stat.innerText = target + "+";
+
+            }
+
+        }, 60);
+
+    });
+</script>
+
 
 </html>
